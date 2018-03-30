@@ -32,7 +32,9 @@ a {
 	text-decoration: none;
 }
 .section {
-	padding: 70px 0 125px;
+}
+.pp-section:not(:first-child) {
+	background: url("/img/bg.png") repeat;
 }
 .container {
 	width: 100%;

@@ -185,16 +185,16 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 						<a class="phone" target="_blank" href="tel:+79118434964">+7 (911) 843-49-64</a>
                         <?= CONTACTS_TEXT2 ?>
 						<div class="contacts__soc">
-							Telegram — <a class="link" target="_blank" href="https://t.me/loftchain">loftchain</a>
-							<br>Skype — loftchain
-							<br>E-Mail — <a class="link" target="_blank" href="mailto:support@loftchain.io">support@loftchain.io</a>
+							Telegram — <a class="link" target="_blank" href="https://t.me/nkmelnikov">@nkmelnikov</a>
+							<br>Skype — <a class="link" target="_blank" href="skype:paradoxnumber7@gmail.com">paradoxnumber7</a>
+							<br>E-Mail — <a class="link" target="_blank" href="mailto:loftchain@gmail.com">loftchain@gmail.com</a>
 						</div>
 					</div>
 				</div>
 				<form class="feedback">
-					<input required type="text" placeholder="<?= INPUT1 ?>">
-					<input type="text" placeholder="<?= INPUT2 ?>">
-					<textarea required rows="5"></textarea>
+					<input name="where" required type="text" placeholder="<?= INPUT1 ?>">
+					<input name="name" type="text" placeholder="<?= INPUT2 ?>">
+					<textarea name="msg" required rows="5"></textarea>
 					<input class="btn" type="submit" value="<?= INPUT3 ?>">
 				</form>
 			</div>
@@ -246,6 +246,18 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					$('.menu .menu__item[data-menuanchor="site-ico"]').addClass('active');
 				}
 			}
+		});
+
+		$("form").submit(function () {
+			$.ajax({
+				type: "POST",
+				url: "feedback.php",
+				data: $(this).serialize()
+			}).done(function (data) {
+				console.log(data)
+				alert("<?=SEND_SUCCESS?>");
+			});
+			return false;
 		});
 	});
 

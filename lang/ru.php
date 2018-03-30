@@ -52,3 +52,5 @@ define('CONTACTS_TEXT2', 'Или использовать альтернатив
 define('INPUT1', '@Telegram / Skype / Телефон / E-mail');
 define('INPUT2', 'Ваше имя');
 define('INPUT3', 'Отправить');
+
+define('SEND_SUCCESS', 'Спасибо! Ваше сообщение успешно отправлено, наши менеджеры свяжутся с Вами в ближайшее время.');

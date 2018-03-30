@@ -51,3 +51,5 @@ define('CONTACTS_TEXT2', 'Or use alternative ways of communication:');
 define('INPUT1', '@Telegram / Skype / Phone / E-mail');
 define('INPUT2', 'Your name');
 define('INPUT3', 'Submit');
+
+define('SEND_SUCCESS', 'Thank you! Your message has been successfully sent, our managers will contact you as soon as possible');
