@@ -182,10 +182,10 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					<h2><?= CONTACTS ?></h2>
 					<div class="contacts__desc">
                         <?= CONTACTS_TEXT1 ?>
-						<a class="phone" target="_blank" href="tel:+79118434964">+7 (911) 843-49-64</a>
+						<a class="phone" target="_blank" href="tel:+79811257276">+7 (981) 125 7276</a>
                         <?= CONTACTS_TEXT2 ?>
 						<div class="contacts__soc">
-							Telegram — <a class="link" target="_blank" href="https://t.me/nkmelnikov">@nkmelnikov</a>
+							Telegram — <a class="link" target="_blank" href="https://t.me/loftchain">https://t.me/loftchain</a>
 							<br>Skype — <a class="link" target="_blank" href="skype:paradoxnumber7@gmail.com">paradoxnumber7</a>
 							<br>E-Mail — <a class="link" target="_blank" href="mailto:loftchain@gmail.com">loftchain@gmail.com</a>
 						</div>
