@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /lang/
+
+User-agent: Googlebot
+# Directories
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /lang/
+
+User-agent: Yandex
+# Directories
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /lang/
+
+Host: loftchain.io
+Sitemap:  https://loftchain.io/sitemap.xml

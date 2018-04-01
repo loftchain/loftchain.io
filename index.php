@@ -216,7 +216,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
                         <?= CONTACTS_TEXT2 ?>
 						<div class="contacts__soc">
 							Telegram — <a class="link" target="_blank" href="https://t.me/loftchain">https://t.me/loftchain</a>
-							<br>Skype — <a class="link" target="_blank" href="skype:paradoxnumber7@gmail.com">paradoxnumber7</a>
+							<br>Skype — <a class="link" target="_blank" href="skype:loftchain@hotmail.com">live:loftchain</a>
 							<br>E-Mail — <a class="link" target="_blank" href="mailto:loftchain@gmail.com">loftchain@gmail.com</a>
 						</div>
 					</div>
