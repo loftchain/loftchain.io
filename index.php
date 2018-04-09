@@ -20,39 +20,65 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 
 	<title><?= TITLE ?></title>
 
+	<meta name="description" content="LoftChain provides technical services for your ICO. Smart contracts, personal cabinets, white papers, landing and splash pages, websites."/>
+	<meta itemprop="name" content="LoftChain">
+	<meta itemprop="description" content="LoftChain - expert technical services for ICOs. Order smart contract, personal cabinet, white paper, landing or website.">
+	<meta itemprop="image" content="https://loftchain.io/img/logo-soc.jpg">
+	<meta name="keywords" content="LoftChain, ICO, smart contract, personal cabinet, white paper, landing, website, design, crypto, cryptogames, technical, services, etherium, bitcoin, blockchain" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:title" content="LoftChain – expert technical services for ICOs">
+	<meta name="twitter:description" content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, whitepaper, landing or website.">
+	<meta name="twitter:image" content="https://loftchain.io/img/logo-soc.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="LoftChain - expert technical services for ICOs"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="https://loftchain.io"/>
+	<meta property="og:image" content="https://loftchain.io/img/logo-soc.jpg"/>
+	<meta property="og:description" content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, white paper, landing or website."/>
+	<meta property="og:site_name" content="LoftChain"/>
+
 	<link rel="stylesheet" href="css/jquery.pagepiling.min.css"/>
 	<link rel="stylesheet" href="css/style.css?v=<?= strtotime('now') ?>">
+	<link rel="stylesheet" href="css/responsive.css?v=<?= strtotime('now') ?>">
 </head>
 <body>
-
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
 	(function (d, w, c) {
-		(w[c] = w[c] || []).push(function() {
+		(w[c] = w[c] || []).push(function () {
 			try {
 				w.yaCounter48285695 = new Ya.Metrika2({
-					id:48285695,
-					clickmap:true,
-					trackLinks:true,
-					accurateTrackBounce:true,
-					webvisor:true
+					id: 48285695,
+					clickmap: true,
+					trackLinks: true,
+					accurateTrackBounce: true,
+					webvisor: true
 				});
-			} catch(e) { }
+			} catch (e) {
+			}
 		});
 
 		var n = d.getElementsByTagName("script")[0],
 			s = d.createElement("script"),
-			f = function () { n.parentNode.insertBefore(s, n); };
+			f = function () {
+				n.parentNode.insertBefore(s, n);
+			};
 		s.type = "text/javascript";
 		s.async = true;
 		s.src = "https://mc.yandex.ru/metrika/tag.js";
 
 		if (w.opera == "[object Opera]") {
 			d.addEventListener("DOMContentLoaded", f, false);
-		} else { f(); }
+		} else {
+			f();
+		}
 	})(document, window, "yandex_metrika_callbacks2");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/48285695" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+	<div><img src="https://mc.yandex.ru/watch/48285695" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 
 <div class="loader-wrap">
@@ -71,6 +97,18 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			<div data-menuanchor="team" class="menu__item"><a href="#team"><?= TEAM ?></a></div>
 			<div data-menuanchor="contacts" class="menu__item"><a href="#contacts"><?= CONTACTS ?></a></div>
 		</nav>
+		<div class="mob-nav">
+			<input type="checkbox" id="mNav" style="display: none">
+			<label for="mNav" class="menustate"><span></span></label>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 </header>
 
@@ -78,6 +116,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<div class="section">
 		<div class="content">
 			<div class="main-info">
+				<img class="main-info__mob-img" src="img/mob-main-img.png" alt="main-img">
 				<img class="logo" src="img/logo-big.png" alt="logo"><br/>
 				<div class="description"><h1><?= DESCRIPTION ?></h1></div>
 			</div>
@@ -93,6 +132,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					gl_Position = projectionMatrix * mvPosition;
 				}
 
+
 			</script>
 			<script type="x-shader/x-fragment" id="wrapFragmentShader">
 				varying vec3 vColor;
@@ -103,6 +143,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
 					gl_FragColor = color;
 				}
+
 
 			</script>
 		</div>
@@ -187,22 +228,22 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					<div class="team__position">UX/UI Designer</div>
 				</div>
 				<div class="team__item">
+					<img class="team__img" src="img/team/5.jpg" alt="face">
+					<div class="team__name">Andrey Petrunin</div>
+					<div class="team__separator">●</div>
+					<div class="team__position">Marketing Manager</div>
+				</div>
+				<div class="team__item">
 					<img class="team__img" src="img/team/3.jpg" alt="face">
 					<div class="team__name">Anton Sirchov</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">Front-and developer</div>
+					<div class="team__position">Blockchain developer</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/4.jpg" alt="face">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Back-and Developer</div>
-				</div>
-				<div class="team__item">
-					<img class="team__img" src="img/team/5.jpg" alt="face">
-					<div class="team__name">Alex Kachura</div>
-					<div class="team__separator">●</div>
-					<div class="team__position">IOS & Android developer</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/8.jpg" alt="face">
@@ -251,40 +292,50 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 <div class="icon-scroll"></div>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/three.min.js"></script>
-<script src="js/TweenMax.min.js"></script>
-<script src="js/sphere.js"></script>
-<script src="js/jquery.pagepiling.min.js"></script>
 <script>
+	var isMobile = window.innerWidth <= 767;
+
+	if (!isMobile) {
+		document.write('<scr' + 'ipt defer src="js/three.min.js"></scr' + 'ipt>');
+		document.write('<scr' + 'ipt defer src="js/TweenMax.min.js"></scr' + 'ipt>');
+		document.write('<scr' + 'ipt defer src="js/sphere.js"></scr' + 'ipt>');
+		document.write('<scr' + 'ipt defer src="js/jquery.pagepiling.min.js"></scr' + 'ipt>');
+	}
+
+	$(window).load(function () {
+		$('.loader-wrap').hide();
+	});
+
 	$(document).ready(function () {
-		$('#pagepiling').pagepiling({
-			direction: 'horizontal',
-			menu: '.navigation',
-			scrollingSpeed: 300,
-			easing: 'swing',
-//			easing: 'linear',
-			loopBottom: false,
-			loopTop: false,
-			css3: true,
-			keyboardScrolling: true,
-			anchors: ['home', 'site-ico', 'back-office', 'smart-contract', 'audit-smart-contract', 'team', 'contacts'],
-			sectionsColor: ['#000', '#000', '#000', '#000', '#000', '#000', '#000'],
-			navigation: false,
-			onLeave: function (index, nextIndex, direction) {
-				if (nextIndex !== 2 && nextIndex !== 3 && nextIndex !== 4 && nextIndex !== 5) {
-					$('.menu-services').removeClass('menu-services_active');
-					$('.menu .menu__item[data-menuanchor="site-ico"]').removeClass('active');
+		if (!isMobile) {
+			$('#pagepiling').pagepiling({
+				direction: 'horizontal',
+				menu: '.navigation',
+				scrollingSpeed: 300,
+				easing: 'swing',
+				loopBottom: false,
+				loopTop: false,
+				css3: true,
+				keyboardScrolling: true,
+				anchors: ['home', 'site-ico', 'back-office', 'smart-contract', 'audit-smart-contract', 'team', 'contacts'],
+				sectionsColor: ['#000', '#000', '#000', '#000', '#000', '#000', '#000'],
+				navigation: false,
+				onLeave: function (index, nextIndex, direction) {
+					if (nextIndex !== 2 && nextIndex !== 3 && nextIndex !== 4 && nextIndex !== 5) {
+						$('.menu-services').removeClass('menu-services_active');
+						$('.menu .menu__item[data-menuanchor="site-ico"]').removeClass('active');
+					}
+				},
+				afterRender: function (index) {
+				},
+				afterLoad: function (anchorLink, index) {
+					if (index === 2 || index === 3 || index === 4 || index === 5) {
+						$('.menu-services').addClass('menu-services_active');
+						$('.menu .menu__item[data-menuanchor="site-ico"]').addClass('active');
+					}
 				}
-			},
-			afterRender: function (index) {
-			},
-			afterLoad: function (anchorLink, index) {
-				if (index === 2 || index === 3 || index === 4 || index === 5) {
-					$('.menu-services').addClass('menu-services_active');
-					$('.menu .menu__item[data-menuanchor="site-ico"]').addClass('active');
-				}
-			}
-		});
+			});
+		}
 
 		$("form").submit(function () {
 			$.ajax({
@@ -299,9 +350,6 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		});
 	});
 
-	$(window).load(function () {
-		$('.loader-wrap').hide();
-	});
 </script>
 
 </body>

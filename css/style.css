@@ -1,10 +1,12 @@
 @import url('normalize.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900&subset=cyrillic');
 @import url('mouse.css');
+@import url('mobile-menu.css');
 body {
 	background: #000;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #ffffff;
+	min-width: 320px;
 }
 h2 {
 	font-size: 30px;
@@ -51,7 +53,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 15px 25px;
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 1px;
