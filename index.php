@@ -20,15 +20,19 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 
 	<title><?= TITLE ?></title>
 
-	<meta name="description" content="LoftChain provides technical services for your ICO. Smart contracts, personal cabinets, white papers, landing and splash pages, websites."/>
+	<meta name="description"
+		  content="LoftChain provides technical services for your ICO. Smart contracts, personal cabinets, white papers, landing and splash pages, websites."/>
 	<meta itemprop="name" content="LoftChain">
-	<meta itemprop="description" content="LoftChain - expert technical services for ICOs. Order smart contract, personal cabinet, white paper, landing or website.">
+	<meta itemprop="description"
+		  content="LoftChain - expert technical services for ICOs. Order smart contract, personal cabinet, white paper, landing or website.">
 	<meta itemprop="image" content="https://loftchain.io/img/logo-soc.jpg">
-	<meta name="keywords" content="LoftChain, ICO, smart contract, personal cabinet, white paper, landing, website, design, crypto, cryptogames, technical, services, etherium, bitcoin, blockchain" />
+	<meta name="keywords"
+		  content="LoftChain, ICO, smart contract, personal cabinet, white paper, landing, website, design, crypto, cryptogames, technical, services, etherium, bitcoin, blockchain"/>
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:title" content="LoftChain – expert technical services for ICOs">
-	<meta name="twitter:description" content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, whitepaper, landing or website.">
+	<meta name="twitter:description"
+		  content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, whitepaper, landing or website.">
 	<meta name="twitter:image" content="https://loftchain.io/img/logo-soc.jpg">
 
 	<!-- Open Graph data -->
@@ -36,7 +40,8 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<meta property="og:type" content="article"/>
 	<meta property="og:url" content="https://loftchain.io"/>
 	<meta property="og:image" content="https://loftchain.io/img/logo-soc.jpg"/>
-	<meta property="og:description" content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, white paper, landing or website."/>
+	<meta property="og:description"
+		  content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, white paper, landing or website."/>
 	<meta property="og:site_name" content="LoftChain"/>
 
 	<link rel="stylesheet" href="css/jquery.pagepiling.min.css"/>
@@ -102,10 +107,10 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			<label for="mNav" class="menustate"><span></span></label>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#site-ico">Services</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contacts">Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -113,7 +118,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 </header>
 
 <div id="pagepiling">
-	<div class="section">
+	<div id="home" class="section">
 		<div class="content">
 			<div class="main-info">
 				<img class="main-info__mob-img" src="img/mob-main-img.png" alt="main-img">
@@ -132,7 +137,6 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					gl_Position = projectionMatrix * mvPosition;
 				}
 
-
 			</script>
 			<script type="x-shader/x-fragment" id="wrapFragmentShader">
 				varying vec3 vColor;
@@ -144,12 +148,11 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					gl_FragColor = color;
 				}
 
-
 			</script>
 		</div>
 	</div>
-	<div class="section">
-		<div class="container">
+	<div id="site-ico" class="section">
+		<div class="container box_service">
 			<div class="service">
 				<img class="service__img" src="img/services/icon-1.svg">
 				<div class="service__info">
@@ -162,7 +165,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		</div>
 	</div>
 	<div class="section">
-		<div class="container">
+		<div class="container box_service">
 			<div class="service service_left">
 				<img class="service__img" src="img/services/icon-2.svg">
 				<div class="service__info">
@@ -175,7 +178,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		</div>
 	</div>
 	<div class="section">
-		<div class="container">
+		<div class="container box_service">
 			<div class="service">
 				<img class="service__img" src="img/services/icon-3.svg">
 				<div class="service__info">
@@ -188,7 +191,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		</div>
 	</div>
 	<div class="section">
-		<div class="container">
+		<div class="container box_service">
 			<div class="service service_left">
 				<img class="service__img" src="img/services/icon-4.svg">
 				<div class="service__info">
@@ -200,7 +203,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div id="team" class="section">
 		<div class="container">
 			<div class="team">
 				<div class="team__item">
@@ -254,7 +257,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div id="contacts" class="section">
 		<div class="container">
 			<div class="contacts">
 				<div class="contacts__info">
@@ -335,6 +338,10 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					}
 				}
 			});
+		} else {
+			$('.mob-nav a').click(function () {
+				$('#mNav').click();
+			});
 		}
 
 		$("form").submit(function () {
@@ -349,6 +356,15 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			return false;
 		});
 	});
+
+	window.onscroll = function() {
+		var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrolled > 0) {
+			document.querySelector('.icon-scroll').style.display = 'none';
+		} else {
+			document.querySelector('.icon-scroll').style.display = 'block';
+		}
+	}
 
 </script>
 

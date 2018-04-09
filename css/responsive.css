@@ -13,6 +13,7 @@
 		border-bottom: 1px solid #252525;
 		background-color: #160206;
 		z-index: 200;
+		height: 50px;
 	}
 	.content {
 		height: calc(100vh);
@@ -43,6 +44,29 @@
 	.description h1 {
 		letter-spacing: 5px;
 	}
+	.team__item {
+		padding: 20px;
+		width: 200px;
+	}
+	.team__item:nth-child(4n) {
+		padding-right: 20px;
+	}
+	.contacts {
+		flex-direction: column;
+	}
+	.contacts__info {
+		width: auto;
+		margin-right: 0;
+	}
+	.feedback {
+		width: auto;
+		max-width: none;
+		padding: 40px 0 20px;
+	}
+	.contacts__info h2 {
+		text-align: center;
+		margin: 60px 0 40px;
+	}
 }
 @media screen and (max-width: 550px) {
 	.description {
@@ -51,6 +75,28 @@
 	.description h1 {
 		font-size: 17px;
 		letter-spacing: 3px;
+	}
+	.service {
+		flex-direction: column-reverse;
+	}
+	.service__info {
+		width: 100%;
+		padding-left: 0;
+	}
+	.box_service {
+		max-height: none;
+		margin: 0 0 60px;
+	}
+	.service__img {
+		width: 100%;
+		max-width: 250px;
+		margin-top: 40px;
+	}
+	.team {
+		margin: 0 -20px;
+	}
+	.team__item {
+		padding: 20px;
 	}
 }
 @media screen and (max-width: 420px) {

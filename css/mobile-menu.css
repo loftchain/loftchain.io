@@ -89,7 +89,7 @@
 
 .mob-nav #mNav:checked ~ nav {
 	visibility: visible;
-	height: 100%;
+	height: calc(100% - 50px);
 	transition: all 0.2s ease;
 }
 .mob-nav #mNav:checked ~ nav ul li {
