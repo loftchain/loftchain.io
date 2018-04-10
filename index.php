@@ -346,8 +346,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			$('.mob-nav nav ul li a').click(function () {
 				event.preventDefault();
 				$('#mNav').click();
-				var id = $(this).attr('href');
-				$('html, body').animate({scrollTop:$(id).position().top - 60}, 1000);
+				$('html, body').animate({scrollTop:$(this.hash).offset().top - 60}, 700);
 			});
 		}
 
