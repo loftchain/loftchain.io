@@ -86,7 +86,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 </noscript>
 <!-- /Yandex.Metrika counter -->
 
-<div class="loader-wrap">
+<div id="page-loader" class="loader-wrap">
 	<div class="loader"></div>
 </div>
 
@@ -267,13 +267,16 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 						<a class="phone" target="_blank" href="tel:+79811257276">+7 (981) 125 7276</a>
                         <?= CONTACTS_TEXT2 ?>
 						<div class="contacts__soc">
-							Telegram — <a class="link" target="_blank" href="https://t.me/loftchain">https://t.me/loftchain</a>
+							Telegram — <a class="link" target="_blank" href="https://t.me/loftchain">@loftchain</a>
 							<br>Skype — <a class="link" target="_blank" href="skype:loftchain@hotmail.com">live:loftchain</a>
-							<br>E-Mail — <a class="link" target="_blank" href="mailto:loftchain@gmail.com">loftchain@gmail.com</a>
+							<br>E-Mail — <a class="link" target="_blank" href="mailto:support@loftchain.io">support@loftchain.io</a>
 						</div>
 					</div>
 				</div>
 				<form class="feedback">
+					<div id="form-loader" class="loader-wrap">
+						<div class="loader"></div>
+					</div>
 					<input name="where" required type="text" placeholder="<?= INPUT1 ?>">
 					<input name="name" type="text" placeholder="<?= INPUT2 ?>">
 					<textarea name="msg" required rows="5"></textarea>
@@ -306,7 +309,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	}
 
 	$(window).load(function () {
-		$('.loader-wrap').hide();
+		$('#page-loader').hide();
 	});
 
 	$(document).ready(function () {
@@ -345,12 +348,17 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		}
 
 		$("form").submit(function () {
+			$('form input[type=submit]').attr('disabled', 'disabled');
+			$('#form-loader').show();
 			$.ajax({
 				type: "POST",
 				url: "feedback.php",
 				data: $(this).serialize()
 			}).done(function (data) {
-				console.log(data)
+				console.log(data);
+				$('#form-loader').hide();
+				$('form').trigger('reset');
+				$('form input[type=submit]').removeAttr('disabled');
 				alert("<?=SEND_SUCCESS?>");
 			});
 			return false;
