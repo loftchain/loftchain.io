@@ -44,7 +44,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		  content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, white paper, landing or website."/>
 	<meta property="og:site_name" content="LoftChain"/>
 
-	<link rel="stylesheet" href="css/jquery.pagepiling.min.css"/>
+	<link rel="stylesheet" href="css/jquery.pagepiling.min.css?v=<?= strtotime('now') ?>"/>
 	<link rel="stylesheet" href="css/style.css?v=<?= strtotime('now') ?>">
 	<link rel="stylesheet" href="css/responsive.css?v=<?= strtotime('now') ?>">
 </head>
@@ -205,6 +205,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	</div>
 	<div id="team" class="section">
 		<div class="container">
+			<h2><?= TEAM ?></h2>
 			<div class="team">
 				<div class="team__item">
 					<img class="team__img" src="img/team/1.jpg" alt="face">
@@ -342,8 +343,11 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 				}
 			});
 		} else {
-			$('.mob-nav a').click(function () {
+			$('.mob-nav nav ul li a').click(function () {
+				event.preventDefault();
 				$('#mNav').click();
+				var id = $(this).attr('href');
+				$('html, body').animate({scrollTop:$(id).position().top - 60}, 1000);
 			});
 		}
 

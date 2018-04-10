@@ -1,7 +1,24 @@
-.mob-nav, .main-info__mob-img {
+.mob-nav, .main-info__mob-img, #team h2 {
 	display: none;
 }
 @media screen and (max-width: 767px) {
+	/*#site-ico, #team, #contacts {*/
+		/*padding-top: 60px;*/
+		/*margin-top: -60px;*/
+	/*}*/
+	#team h2 {
+		display: block;
+	}
+	h2 {
+		text-align: center;
+		margin: 10px 0 20px;
+	}
+	.service__price {
+		text-align: center;
+	}
+	#contacts h2 {
+		margin: 10px 0 40px;
+	}
 	.navigation {
 		display: none;
 	}
@@ -64,10 +81,6 @@
 		max-width: none;
 		padding: 40px 0 60px;
 	}
-	.contacts__info h2 {
-		text-align: center;
-		margin: 60px 0 40px;
-	}
 }
 @media screen and (max-width: 550px) {
 	.description {
@@ -86,7 +99,10 @@
 	}
 	.box_service {
 		max-height: none;
-		margin: 0 0 60px;
+		margin: 0 0 80px;
+	}
+	.team {
+		margin-bottom: 80px;
 	}
 	.service__img {
 		width: 100%;
@@ -94,7 +110,8 @@
 		margin-top: 40px;
 	}
 	.team {
-		margin: 0 -20px;
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 	.team__item {
 		padding: 20px;
