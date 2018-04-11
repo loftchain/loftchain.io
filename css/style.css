@@ -252,7 +252,7 @@ a {
 }
 .contacts__desc {
 	font-weight: 200;
-	font-size: 16px;
+	font-size: 18px;
 }
 .contacts__soc {
 	margin-top: 20px;
@@ -321,4 +321,5 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }

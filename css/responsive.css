@@ -1,6 +1,34 @@
 .mob-nav, .main-info__mob-img, #team h2 {
 	display: none;
 }
+@media screen and (min-width: 1600px) {
+	.header {
+		padding: 30px 40px;
+		font-size: 20px;
+	}
+	.description {
+		padding: 8px 17px;
+		font-size: 30px;
+	}
+	.menu-services {
+		font-size: 20px;
+	}
+	.service__description, .service__benefits {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	.team__item {
+		font-size: 20px;
+	}
+	.contacts__desc {
+		font-size: 20px;
+	}
+	.feedback {
+		font-size: 20px;
+	}
+}
 @media screen and (max-width: 767px) {
 	/*#site-ico, #team, #contacts {*/
 		/*padding-top: 60px;*/

@@ -305,7 +305,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	if (!isMobile) {
 		document.write('<scr' + 'ipt defer src="js/three.min.js"></scr' + 'ipt>');
 		document.write('<scr' + 'ipt defer src="js/TweenMax.min.js"></scr' + 'ipt>');
-		document.write('<scr' + 'ipt defer src="js/sphere.js"></scr' + 'ipt>');
+		document.write('<scr' + 'ipt defer src="js/sphere.js?v=<?= strtotime('now') ?>"></scr' + 'ipt>');
 		document.write('<scr' + 'ipt defer src="js/jquery.pagepiling.min.js"></scr' + 'ipt>');
 	}
 
