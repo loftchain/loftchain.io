@@ -193,6 +193,7 @@ a {
 }
 .service__img {
 	width: 30%;
+	max-width: 330px;
 }
 .service__info {
 	width: 70%;

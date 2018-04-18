@@ -154,7 +154,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<div id="site-ico" class="section">
 		<div class="container box_service">
 			<div class="service">
-				<img class="service__img" src="img/services/icon-1.svg">
+				<img class="service__img" src="img/services/icon-1.png">
 				<div class="service__info">
 					<h2><?= SERVICE1_TITLE ?></h2>
 					<div class="service__price"><?= SERVICE1_PRICE ?></div>
@@ -167,7 +167,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<div class="section">
 		<div class="container box_service">
 			<div class="service service_left">
-				<img class="service__img" src="img/services/icon-2.svg">
+				<img class="service__img" src="img/services/icon-2.png">
 				<div class="service__info">
 					<h2><?= SERVICE2_TITLE ?></h2>
 					<div class="service__price"><?= SERVICE2_PRICE ?></div>
@@ -180,7 +180,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<div class="section">
 		<div class="container box_service">
 			<div class="service">
-				<img class="service__img" src="img/services/icon-3.svg">
+				<img class="service__img" src="img/services/icon-3.png">
 				<div class="service__info">
 					<h2><?= SERVICE3_TITLE ?></h2>
 					<div class="service__price"><?= SERVICE3_PRICE ?></div>
@@ -193,7 +193,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<div class="section">
 		<div class="container box_service">
 			<div class="service service_left">
-				<img class="service__img" src="img/services/icon-4.svg">
+				<img class="service__img" src="img/services/icon-4.png">
 				<div class="service__info">
 					<h2><?= SERVICE4_TITLE ?></h2>
 					<div class="service__price"><?= SERVICE4_PRICE ?></div>
@@ -247,7 +247,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 					<img class="team__img" src="img/team/4.jpg" alt="face">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">Back-and Developer</div>
+					<div class="team__position">Back-end Developer</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/8.jpg" alt="face">
