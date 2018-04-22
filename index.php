@@ -44,6 +44,14 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		  content="LoftChain is a team of blockchain experts who will help you develop smart contract, personal cabinet, white paper, landing or website."/>
 	<meta property="og:site_name" content="LoftChain"/>
 
+	<script>
+		var savedLang = localStorage.getItem('lang');
+		var nowLang = '<?=$lang?>';
+		if ( savedLang && savedLang != nowLang ) {
+			location.href = '//loftchain.io?lang='+savedLang;
+		}
+	</script>
+
 	<link rel="stylesheet" href="css/jquery.pagepiling.min.css?v=<?= strtotime('now') ?>"/>
 	<link rel="stylesheet" href="css/style.css?v=<?= strtotime('now') ?>">
 	<link rel="stylesheet" href="css/responsive.css?v=<?= strtotime('now') ?>">
@@ -93,8 +101,12 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 <header class="header-wrap">
 	<div class="header container">
 		<div class="lang">
-			<div class="lang__item <?= ($lang == 'en') ? 'lang__item_active' : '' ?>"><a href="/?lang=en">EN</a></div>
-			<div class="lang__item <?= ($lang == 'ru') ? 'lang__item_active' : '' ?>"><a href="/?lang=ru">RU</a></div>
+			<div class="lang__item <?= ($lang == 'en') ? 'lang__item_active' : '' ?>">
+				<a href="/?lang=en" onclick="setLang('en')">EN</a>
+			</div>
+			<div class="lang__item <?= ($lang == 'ru') ? 'lang__item_active' : '' ?>">
+				<a href="/?lang=ru" onclick="setLang('ru')">RU</a>
+			</div>
 		</div>
 		<nav class="menu navigation">
 			<div data-menuanchor="home" class="active menu__item"><a href="#home"><?= HOME ?></a></div>
@@ -376,6 +388,19 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			document.querySelector('.icon-scroll').style.display = 'block';
 		}
 	}
+
+	function setLang(newLang, event) {
+		event = event || window.event
+		if (event.preventDefault) {
+			event.preventDefault();
+		} else {
+			event.returnValue = false;
+		}
+
+		localStorage.setItem('lang', newLang);
+		location.href = '//loftchain.io?lang='+newLang;
+	}
+
 
 </script>
 

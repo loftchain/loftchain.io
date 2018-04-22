@@ -28,6 +28,9 @@
 	.feedback {
 		font-size: 20px;
 	}
+	.menu-services {
+		bottom: 90px;
+	}
 }
 @media screen and (max-width: 767px) {
 	/*#site-ico, #team, #contacts {*/

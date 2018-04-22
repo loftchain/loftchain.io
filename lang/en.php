@@ -11,8 +11,7 @@ define('SERVICE1_PRICE', 'from $1700');
 define('SERVICE1_DESC', 'The first thing that attracts attention of the potential investor is design of the site.
     <br/><br/>We develop design that is specialized for the blockchain industry, which will attract the maximum number of potential investors and will help them to easily navigate within the project.
     <br/><br/>The second is the level of confidence in the project. Our team guarantees clean code using modern frameworks and suitable programming patterns, correct display of the site on any devices and in all browsers. Providing full and consistent information.');
-define('SERVICE1_BENEFITS', '<li>Creation of a logo and corporate identity of the project</li>
-    <li>Design development</li>
+define('SERVICE1_BENEFITS', '<li>Design development</li>
     <li>Front-end</li>
     <li>Back-end</li>
     <li>Connecting Analytical Systems</li>
