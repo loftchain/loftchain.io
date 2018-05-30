@@ -102,10 +102,13 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	<div class="header container">
 		<div class="lang">
 			<div class="lang__item <?= ($lang == 'en') ? 'lang__item_active' : '' ?>">
-				<a href="/?lang=en" onclick="setLang('en')">EN</a>
+				<a href="/?lang=en" onclick="setLang('en')">ENG</a>
 			</div>
 			<div class="lang__item <?= ($lang == 'ru') ? 'lang__item_active' : '' ?>">
-				<a href="/?lang=ru" onclick="setLang('ru')">RU</a>
+				<a href="/?lang=ru" onclick="setLang('ru')">РУС</a>
+			</div>
+			<div class="lang__item <?= ($lang == 'cn') ? 'lang__item_active' : '' ?>">
+				<a href="/?lang=cn" onclick="setLang('cn')">中文</a>
 			</div>
 		</div>
 		<nav class="menu navigation">
