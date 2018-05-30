@@ -122,10 +122,10 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			<label for="mNav" class="menustate"><span></span></label>
 			<nav>
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#site-ico">Services</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#contacts">Contacts</a></li>
+					<li><a href="#home"><?= HOME ?></a></li>
+					<li><a href="#site-ico"><?= SERVICES ?></a></li>
+					<li><a href="#team"><?= TEAM ?></a></li>
+					<li><a href="#contacts"><?= CONTACTS ?></a></li>
 				</ul>
 			</nav>
 		</div>
