@@ -224,51 +224,51 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			<div class="team">
 				<div class="team__item">
 					<img class="team__img" src="img/team/1.jpg" alt="face">
-					<div class="team__name">Konstantin Kalinouski</div>
+					<div class="team__name">Nikita Melnikov</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">CEO & CO - Founder</div>
+					<div class="team__position">CTO & co-founder</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/2.jpg" alt="face">
-					<div class="team__name">Nikita Melnikov</div>
+					<div class="team__name">Konstantin Kalinouski</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">CTO & CO - Founder</div>
-				</div>
-				<div class="team__item">
-					<img class="team__img" src="img/team/6.jpg" alt="face">
-					<div class="team__name">Elena Samoylova</div>
-					<div class="team__separator">●</div>
-					<div class="team__position">Product manager</div>
-				</div>
-				<div class="team__item">
-					<img class="team__img" src="img/team/7.jpg" alt="face">
-					<div class="team__name">Yuliya Fray</div>
-					<div class="team__separator">●</div>
-					<div class="team__position">UX/UI Designer</div>
+					<div class="team__position">СTO(blockchain) & co-founder</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/5.jpg" alt="face">
 					<div class="team__name">Andrey Petrunin</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">Marketing Manager</div>
+					<div class="team__position">CMO</div>
+				</div>
+				<div class="team__item">
+					<img class="team__img" src="img/team/6.jpg" alt="face">
+					<div class="team__name">Elena Samoylova</div>
+					<div class="team__separator">●</div>
+					<div class="team__position">COO</div>
+				</div>
+				<div class="team__item">
+					<img class="team__img" src="img/team/7.jpg" alt="face">
+					<div class="team__name">Yuliya Fray</div>
+					<div class="team__separator">●</div>
+					<div class="team__position">Art Director</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/3.jpg" alt="face">
-					<div class="team__name">Anton Sirchov</div>
+					<div class="team__name">Alexander Shamekov</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">Blockchain developer</div>
+					<div class="team__position">Marketing manager (China)</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/4.jpg" alt="face">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">Back-end Developer</div>
+					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/8.jpg" alt="face">
 					<div class="team__name">Sergey Bekish</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">UX/UI Designer</div>
+					<div class="team__position">Senior front-end developer</div>
 				</div>
 			</div>
 		</div>
