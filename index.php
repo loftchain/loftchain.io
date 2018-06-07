@@ -1,6 +1,7 @@
 <?php
 $lang = $_GET['lang'] ? $_GET['lang'] : 'en';
 include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
+$v = 0.1;
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -52,9 +53,9 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 		}
 	</script>
 
-	<link rel="stylesheet" href="css/jquery.pagepiling.min.css?v=<?= strtotime('now') ?>"/>
-	<link rel="stylesheet" href="css/style.css?v=<?= strtotime('now') ?>">
-	<link rel="stylesheet" href="css/responsive.css?v=<?= strtotime('now') ?>">
+	<link rel="stylesheet" href="css/jquery.pagepiling.min.css?v=<?= $v ?>"/>
+	<link rel="stylesheet" href="css/style.css?v=<?= $v ?>">
+	<link rel="stylesheet" href="css/responsive.css?v=<?= $v ?>">
 </head>
 <body>
 <!-- Yandex.Metrika counter -->
@@ -223,49 +224,49 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 			<h2><?= TEAM ?></h2>
 			<div class="team">
 				<div class="team__item">
-					<img class="team__img" src="img/team/1.jpg" alt="face">
+					<img class="team__img" src="img/team/1.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Nikita Melnikov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CTO & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/2.jpg" alt="face">
+					<img class="team__img" src="img/team/2.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Konstantin Kalinouski</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">СTO(blockchain) & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/5.jpg" alt="face">
+					<img class="team__img" src="img/team/5.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Andrey Petrunin</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CMO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/6.jpg" alt="face">
+					<img class="team__img" src="img/team/6.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Elena Samoylova</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">COO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/7.jpg" alt="face">
+					<img class="team__img" src="img/team/7.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Yuliya Fray</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Art Director</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/3.jpg" alt="face">
+					<img class="team__img" src="img/team/3.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Alexander Shamekov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Marketing manager (China)</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/4.jpg" alt="face">
+					<img class="team__img" src="img/team/4.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/8.jpg" alt="face">
+					<img class="team__img" src="img/team/8.jpg?v=<?= $v ?>" alt="face">
 					<div class="team__name">Sergey Bekish</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior front-end developer</div>
@@ -321,7 +322,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
 	if (!isMobile) {
 		document.write('<scr' + 'ipt defer src="js/three.min.js"></scr' + 'ipt>');
 		document.write('<scr' + 'ipt defer src="js/TweenMax.min.js"></scr' + 'ipt>');
-		document.write('<scr' + 'ipt defer src="js/sphere.js?v=<?= strtotime('now') ?>"></scr' + 'ipt>');
+		document.write('<scr' + 'ipt defer src="js/sphere.js?v=<?= $v ?>"></scr' + 'ipt>');
 		document.write('<scr' + 'ipt defer src="js/jquery.pagepiling.min.js"></scr' + 'ipt>');
 	}
 
