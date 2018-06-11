@@ -95,6 +95,12 @@ $v = 0.1;
 </noscript>
 <!-- /Yandex.Metrika counter -->
 
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+	(function(){ var widget_id = 'GaIpwQ6vtc';var d=document;var w=window;function l(){
+		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/geo-widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
 <div id="page-loader" class="loader-wrap">
 	<div class="loader"></div>
 </div>
@@ -224,49 +230,49 @@ $v = 0.1;
 			<h2><?= TEAM ?></h2>
 			<div class="team">
 				<div class="team__item">
-					<img class="team__img" src="img/team/1.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/1.jpg" alt="face">
 					<div class="team__name">Nikita Melnikov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CTO & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/2.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/2.jpg" alt="face">
 					<div class="team__name">Konstantin Kalinouski</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">СTO(blockchain) & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/5.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/5.jpg" alt="face">
 					<div class="team__name">Andrey Petrunin</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CMO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/6.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/6.jpg" alt="face">
 					<div class="team__name">Elena Samoylova</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">COO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/7.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/7.jpg" alt="face">
 					<div class="team__name">Yuliya Fray</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Art Director</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/3.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/3.jpg" alt="face">
 					<div class="team__name">Alexander Shamekov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Marketing manager (China)</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/4.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/4.jpg" alt="face">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/8.jpg?v=<?= $v ?>" alt="face">
+					<img class="team__img" src="img/team/8.jpg" alt="face">
 					<div class="team__name">Sergey Bekish</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior front-end developer</div>
