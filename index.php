@@ -109,30 +109,30 @@ $v = 0.1;
 	<div class="header container">
 		<div class="lang">
 			<div class="lang__item <?= ($lang == 'en') ? 'lang__item_active' : '' ?>">
-				<a href="/?lang=en" onclick="setLang('en')">ENG</a>
+				<a href="/?lang=en" rel="nofollow" onclick="setLang('en')">ENG</a>
 			</div>
 			<div class="lang__item <?= ($lang == 'ru') ? 'lang__item_active' : '' ?>">
-				<a href="/?lang=ru" onclick="setLang('ru')">РУС</a>
+				<a href="/?lang=ru" rel="nofollow" onclick="setLang('ru')">РУС</a>
 			</div>
 			<div class="lang__item <?= ($lang == 'cn') ? 'lang__item_active' : '' ?>">
-				<a href="/?lang=cn" onclick="setLang('cn')">中文</a>
+				<a href="/?lang=cn" rel="nofollow" onclick="setLang('cn')">中文</a>
 			</div>
 		</div>
 		<nav class="menu navigation">
-			<div data-menuanchor="home" class="active menu__item"><a href="#home"><?= HOME ?></a></div>
-			<div data-menuanchor="site-ico" class="menu__item"><a href="#site-ico"><?= SERVICES ?></a></div>
-			<div data-menuanchor="team" class="menu__item"><a href="#team"><?= TEAM ?></a></div>
-			<div data-menuanchor="contacts" class="menu__item"><a href="#contacts"><?= CONTACTS ?></a></div>
+			<div data-menuanchor="home" class="active menu__item"><a href="#home" rel="nofollow" ><?= HOME ?></a></div>
+			<div data-menuanchor="site-ico" class="menu__item"><a href="#site-ico" rel="nofollow" ><?= SERVICES ?></a></div>
+			<div data-menuanchor="team" class="menu__item"><a href="#team" rel="nofollow" ><?= TEAM ?></a></div>
+			<div data-menuanchor="contacts" class="menu__item"><a href="#contacts" rel="nofollow" ><?= CONTACTS ?></a></div>
 		</nav>
 		<div class="mob-nav">
 			<input type="checkbox" id="mNav" style="display: none">
 			<label for="mNav" class="menustate"><span></span></label>
 			<nav>
 				<ul>
-					<li><a href="#home"><?= HOME ?></a></li>
-					<li><a href="#site-ico"><?= SERVICES ?></a></li>
-					<li><a href="#team"><?= TEAM ?></a></li>
-					<li><a href="#contacts"><?= CONTACTS ?></a></li>
+					<li><a href="#home" rel="nofollow" ><?= HOME ?></a></li>
+					<li><a href="#site-ico" rel="nofollow" ><?= SERVICES ?></a></li>
+					<li><a href="#team" rel="nofollow" ><?= TEAM ?></a></li>
+					<li><a href="#contacts" rel="nofollow" ><?= CONTACTS ?></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -230,49 +230,49 @@ $v = 0.1;
 			<h2><?= TEAM ?></h2>
 			<div class="team">
 				<div class="team__item">
-					<img class="team__img" src="img/team/1.jpg" alt="face">
+					<img class="team__img" src="img/team/1.jpg?v=2" alt="face">
 					<div class="team__name">Nikita Melnikov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CTO & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/2.jpg" alt="face">
-					<div class="team__name">Konstantin Kalinouski</div>
+					<img class="team__img" src="img/team/2.jpg?v=2" alt="face">
+					<div class="team__name">Anton Drobnitcki</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">СTO(blockchain) & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/5.jpg" alt="face">
+					<img class="team__img" src="img/team/5.jpg?v=2" alt="face">
 					<div class="team__name">Andrey Petrunin</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CMO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/6.jpg" alt="face">
+					<img class="team__img" src="img/team/6.jpg?v=2" alt="face">
 					<div class="team__name">Elena Samoylova</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">COO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/7.jpg" alt="face">
+					<img class="team__img" src="img/team/7.jpg?v=2" alt="face">
 					<div class="team__name">Yuliya Fray</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Art Director</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/3.jpg" alt="face">
+					<img class="team__img" src="img/team/3.jpg?v=2" alt="face">
 					<div class="team__name">Alexander Shamekov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Marketing manager (China)</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/4.jpg" alt="face">
+					<img class="team__img" src="img/team/4.jpg?v=2" alt="face">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/8.jpg" alt="face">
+					<img class="team__img" src="img/team/8.jpg?v=2" alt="face">
 					<div class="team__name">Sergey Bekish</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior front-end developer</div>
@@ -287,13 +287,13 @@ $v = 0.1;
 					<h2><?= CONTACTS ?></h2>
 					<div class="contacts__desc">
                         <?= CONTACTS_TEXT1 ?>
-						<a class="phone" target="_blank" href="tel:+79811257276">+7 (981) 125 7276</a>
+						<a class="phone" target="_blank" rel="nofollow" href="tel:+79811257276">+7 (981) 125 7276</a>
                         <?= CONTACTS_TEXT2 ?>
 						<div class="contacts__soc">
-							Telegram — <a class="link" target="_blank" href="https://t.me/loftchain">@loftchain</a>
-							<br>WhatsUp — <a class="link" target="_blank" href="https://api.whatsapp.com/send?phone=79811257276">79811257276</a>
-							<br>Skype — <a class="link" target="_blank" href="skype:loftchain@hotmail.com">live:loftchain</a>
-							<br>E-Mail — <a class="link" target="_blank" href="mailto:support@loftchain.io">support@loftchain.io</a>
+							Telegram — <a class="link" target="_blank" rel="nofollow" href="https://t.me/loftchain">@loftchain</a>
+							<br>WhatsUp — <a class="link" target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=79811257276">79811257276</a>
+							<br>Skype — <a class="link" target="_blank" rel="nofollow" href="skype:loftchain@hotmail.com">live:loftchain</a>
+							<br>E-Mail — <a class="link" target="_blank" rel="nofollow" href="mailto:support@loftchain.io">support@loftchain.io</a>
 						</div>
 					</div>
 				</div>
@@ -312,10 +312,10 @@ $v = 0.1;
 </div>
 
 <nav class="menu-services navigation">
-	<a class="menu-services__item" href="#site-ico" data-menuanchor="site-ico"><?= SERVICE1_TITLE ?></a>
-	<a class="menu-services__item" href="#back-office" data-menuanchor="back-office"><?= SERVICE2_TITLE ?></a>
-	<a class="menu-services__item" href="#smart-contract" data-menuanchor="smart-contract"><?= SERVICE3_TITLE ?></a>
-	<a class="menu-services__item" href="#audit-smart-contract"
+	<a class="menu-services__item" rel="nofollow" href="#site-ico" data-menuanchor="site-ico"><?= SERVICE1_TITLE ?></a>
+	<a class="menu-services__item" rel="nofollow" href="#back-office" data-menuanchor="back-office"><?= SERVICE2_TITLE ?></a>
+	<a class="menu-services__item" rel="nofollow" href="#smart-contract" data-menuanchor="smart-contract"><?= SERVICE3_TITLE ?></a>
+	<a class="menu-services__item" rel="nofollow" href="#audit-smart-contract"
 	   data-menuanchor="audit-smart-contract"><?= SERVICE4_TITLE ?></a>
 </nav>
 
