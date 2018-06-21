@@ -230,49 +230,49 @@ $v = 0.1;
 			<h2><?= TEAM ?></h2>
 			<div class="team">
 				<div class="team__item">
-					<img class="team__img" src="img/team/1.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/1.jpg?v=2" alt="Nikita Melnikov">
 					<div class="team__name">Nikita Melnikov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CTO & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/2.jpg?v=2" alt="face">
-					<div class="team__name">Anton Drobnitcki</div>
+					<img class="team__img" src="img/team/2_kost.jpg" alt="Kalinouski Kanstantsin">
+					<div class="team__name">Kalinouski Kanstantsin</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">СTO(blockchain) & co-founder</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/5.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/5.jpg?v=2" alt="Andrey Petrunin">
 					<div class="team__name">Andrey Petrunin</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">CMO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/6.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/6.jpg?v=2" alt="Elena Samoylova">
 					<div class="team__name">Elena Samoylova</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">COO</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/7.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/7.jpg?v=2" alt="Yuliya Fray">
 					<div class="team__name">Yuliya Fray</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Art Director</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/3.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/3.jpg?v=2" alt="Alexander Shamekov">
 					<div class="team__name">Alexander Shamekov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Marketing manager (China)</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/4.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/4.jpg?v=2" alt="Artem Began">
 					<div class="team__name">Artem Began</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/8.jpg?v=2" alt="face">
+					<img class="team__img" src="img/team/8.jpg?v=2" alt="Sergey Bekish">
 					<div class="team__name">Sergey Bekish</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior front-end developer</div>
@@ -292,6 +292,7 @@ $v = 0.1;
 						<div class="contacts__soc">
 							Telegram — <a class="link" target="_blank" rel="nofollow" href="https://t.me/loftchain">@loftchain</a>
 							<br>WhatsUp — <a class="link" target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=79811257276">79811257276</a>
+							<br>WeChat — <a class="link" target="_blank" rel="nofollow" href="weixin://dl/chat?loftchain">loftchain</a>
 							<br>Skype — <a class="link" target="_blank" rel="nofollow" href="skype:loftchain@hotmail.com">live:loftchain</a>
 							<br>E-Mail — <a class="link" target="_blank" rel="nofollow" href="mailto:support@loftchain.io">support@loftchain.io</a>
 						</div>
