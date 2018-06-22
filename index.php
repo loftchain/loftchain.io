@@ -1,7 +1,7 @@
 <?php
 $lang = $_GET['lang'] ? $_GET['lang'] : 'en';
 include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
-$v = 0.1;
+$v = 3;
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -292,7 +292,7 @@ $v = 0.1;
 						<div class="contacts__soc">
 							Telegram — <a class="link" target="_blank" rel="nofollow" href="https://t.me/loftchain">@loftchain</a>
 							<br>WhatsUp — <a class="link" target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=79811257276">79811257276</a>
-							<br>WeChat — <a class="link" target="_blank" rel="nofollow" href="weixin://dl/chat?loftchain">loftchain</a>
+							<br>WeChat — <span class="link_text">loftchain</span>
 							<br>Skype — <a class="link" target="_blank" rel="nofollow" href="skype:loftchain@hotmail.com">live:loftchain</a>
 							<br>E-Mail — <a class="link" target="_blank" rel="nofollow" href="mailto:support@loftchain.io">support@loftchain.io</a>
 						</div>
