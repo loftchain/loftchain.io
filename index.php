@@ -46,11 +46,11 @@ $v = 3;
 	<meta property="og:site_name" content="LoftChain"/>
 
 	<script>
-		var savedLang = localStorage.getItem('lang');
-		var nowLang = '<?=$lang?>';
-		if ( savedLang && savedLang != nowLang ) {
-			location.href = '//loftchain.io?lang='+savedLang;
-		}
+//		var savedLang = localStorage.getItem('lang');
+//		var nowLang = '<?//=$lang?>//';
+//		if ( savedLang && savedLang != nowLang ) {
+//			location.href = '//loftchain.io?lang='+savedLang;
+//		}
 	</script>
 
 	<link rel="stylesheet" href="css/jquery.pagepiling.min.css?v=<?= $v ?>"/>
