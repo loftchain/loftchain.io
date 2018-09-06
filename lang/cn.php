@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 define('TITLE', 'LoftChain - ICO 技术解决方案');
 define('HOME', '首页');
