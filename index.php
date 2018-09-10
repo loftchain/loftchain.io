@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 $lang = $_GET['lang'] ? $_GET['lang'] : 'en';
 include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
