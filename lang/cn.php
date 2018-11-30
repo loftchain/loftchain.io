@@ -4,6 +4,7 @@ define('TITLE', 'LoftChain - ICO 技术解决方案');
 define('HOME', '首页');
 define('SERVICES', '服务');
 define('TEAM', '团队');
+define('WORKS', '我們的作品');
 define('CONTACTS', '联系方式');
 define('DESCRIPTION', '区块链项目设计');
 

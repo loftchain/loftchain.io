@@ -1,7 +1,7 @@
 <?php
 $lang = $_GET['lang'] ? $_GET['lang'] : 'en';
 include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
-$v = 3;
+$v = 4;
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -46,11 +46,11 @@ $v = 3;
 	<meta property="og:site_name" content="LoftChain"/>
 
 	<script>
-//		var savedLang = localStorage.getItem('lang');
-//		var nowLang = '<?//=$lang?>//';
-//		if ( savedLang && savedLang != nowLang ) {
-//			location.href = '//loftchain.io?lang='+savedLang;
-//		}
+		//		var savedLang = localStorage.getItem('lang');
+		//		var nowLang = '<?//=$lang?>//';
+		//		if ( savedLang && savedLang != nowLang ) {
+		//			location.href = '//loftchain.io?lang='+savedLang;
+		//		}
 	</script>
 
 	<link rel="stylesheet" href="css/jquery.pagepiling.min.css?v=<?= $v ?>"/>
@@ -122,20 +122,24 @@ $v = 3;
 			</div>
 		</div>
 		<nav class="menu navigation">
-			<div data-menuanchor="home" class="active menu__item"><a href="#home" rel="nofollow" ><?= HOME ?></a></div>
-			<div data-menuanchor="site-ico" class="menu__item"><a href="#site-ico" rel="nofollow" ><?= SERVICES ?></a></div>
-			<div data-menuanchor="team" class="menu__item"><a href="#team" rel="nofollow" ><?= TEAM ?></a></div>
-			<div data-menuanchor="contacts" class="menu__item"><a href="#contacts" rel="nofollow" ><?= CONTACTS ?></a></div>
+			<div data-menuanchor="home" class="active menu__item"><a href="#home" rel="nofollow"><?= HOME ?></a></div>
+			<div data-menuanchor="site-ico" class="menu__item"><a href="#site-ico" rel="nofollow"><?= SERVICES ?></a>
+			</div>
+			<div data-menuanchor="team" class="menu__item"><a href="#team" rel="nofollow"><?= TEAM ?></a></div>
+			<div data-menuanchor="works" class="menu__item"><a href="#works" rel="nofollow"><?= WORKS ?></a></div>
+			<div data-menuanchor="contacts" class="menu__item"><a href="#contacts" rel="nofollow"><?= CONTACTS ?></a>
+			</div>
 		</nav>
 		<div class="mob-nav">
 			<input type="checkbox" id="mNav" style="display: none">
 			<label for="mNav" class="menustate"><span></span></label>
 			<nav>
 				<ul>
-					<li><a href="#home" rel="nofollow" ><?= HOME ?></a></li>
-					<li><a href="#site-ico" rel="nofollow" ><?= SERVICES ?></a></li>
-					<li><a href="#team" rel="nofollow" ><?= TEAM ?></a></li>
-					<li><a href="#contacts" rel="nofollow" ><?= CONTACTS ?></a></li>
+					<li><a href="#home" rel="nofollow"><?= HOME ?></a></li>
+					<li><a href="#site-ico" rel="nofollow"><?= SERVICES ?></a></li>
+					<li><a href="#team" rel="nofollow"><?= TEAM ?></a></li>
+					<li><a href="#works" rel="nofollow"><?= WORKS ?></a></li>
+					<li><a href="#contacts" rel="nofollow"><?= CONTACTS ?></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -145,35 +149,35 @@ $v = 3;
 <div id="pagepiling">
 	<div id="home" class="section">
 		<div class="content">
-			<div class="main-info">
-				<img class="main-info__mob-img" src="img/mob-main-img.png" alt="main-img">
-				<img class="logo" src="img/logo-big.png" alt="logo"><br/>
-				<div class="description"><h1><?= DESCRIPTION ?></h1></div>
-			</div>
-			<canvas class="sphere scene scene--full" id="scene"></canvas>
-			<script type="x-shader/x-vertex" id="wrapVertexShader">
-				attribute float size;
-				attribute vec3 color;
-				varying vec3 vColor;
-				void main() {
-					vColor = color;
-					vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-					gl_PointSize = size * ( 350.0 / - mvPosition.z );
-					gl_Position = projectionMatrix * mvPosition;
-				}
+						<div class="main-info">
+							<img class="main-info__mob-img" src="img/mob-main-img.png" alt="main-img">
+							<img class="logo" src="img/logo-big.png" alt="logo"><br/>
+							<div class="description"><h1><?= DESCRIPTION ?></h1></div>
+						</div>
+						<canvas class="sphere scene scene--full" id="scene"></canvas>
+						<script type="x-shader/x-vertex" id="wrapVertexShader">
+							attribute float size;
+							attribute vec3 color;
+							varying vec3 vColor;
+							void main() {
+								vColor = color;
+								vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+								gl_PointSize = size * ( 350.0 / - mvPosition.z );
+								gl_Position = projectionMatrix * mvPosition;
+							}
 
-			</script>
-			<script type="x-shader/x-fragment" id="wrapFragmentShader">
-				varying vec3 vColor;
-				uniform sampler2D texture;
-				void main(){
-					vec4 textureColor = texture2D( texture, gl_PointCoord );
-					if ( textureColor.a < 0.3 ) discard;
-					vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-					gl_FragColor = color;
-				}
+						</script>
+						<script type="x-shader/x-fragment" id="wrapFragmentShader">
+							varying vec3 vColor;
+							uniform sampler2D texture;
+							void main(){
+								vec4 textureColor = texture2D( texture, gl_PointCoord );
+								if ( textureColor.a < 0.3 ) discard;
+								vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+								gl_FragColor = color;
+							}
 
-			</script>
+						</script>
 		</div>
 	</div>
 	<div id="site-ico" class="section">
@@ -283,6 +287,119 @@ $v = 3;
 			</div>
 		</div>
 	</div>
+	<div id="works" class="section">
+		<div class="container">
+			<h2 class="work-title"><?= WORKS ?></h2>
+			<div class="work">
+				<img class="work__img" src="img/works/arcona_main_500.png">
+				<div class="work__content">
+					<div class="work__title">Arcona - маркетплэйс виртуальной земли.</div>
+					<div>Блокчейн экосистема Arcona объединяет реальный и
+						виртуальный миры, создавая глобальный слой дополненной реальности – Цифровую землю.
+						<br><br>
+						Наша команда взяла на себя <b>блокчейн разработку</b> этого проекта.
+						<br><br>
+						Наша команда разработала:
+						<br><br>
+						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/Auction.sol"
+							 rel="nofollow">Контракт аукциона</a>
+						<br>
+						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/LTT.sol"
+							 rel="nofollow">Контракт земли</a>
+						<br><br>
+						С момента запуска контракты показывают безукоризненную работу.
+						<br><br>
+						<a class="link" target="_blank" href="https://www.arcona.io/index.html" rel="nofollow">Подробнее о проекте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<h2 class="work-title"><?= WORKS ?></h2>
+			<div class="work">
+				<img class="work__img" src="img/works/leadrex_main.png">
+				<div class="work__content">
+					<div class="work__title">LeadRex - децентрализованная платформа лидогенерации</div>
+					<div>Платформа лидогенерации на базе искусственного интеллекта и блокчейн разрабатывается для
+						увеличения конверсии рекламных кампаний и снижения операционных затрат.
+						<br><br>
+						Наша команда разработала:
+						<br><br>
+						● <a class="link" target="_blank" href="https://investor.leadrex.io/" rel="nofollow">Личый кабинет инвестора</a>
+						<br>
+						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/LDX.sol"
+							 rel="nofollow">ERC20 Токен LDX</a>
+						<br><br>
+						ICO успешно завершено и собрало более 3 миллионов долларов.
+						<br><br>
+						<a class="link" target="_blank" href="https://leadrex.io/" rel="nofollow">Подробнее о проекте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<h2 class="work-title"><?= WORKS ?></h2>
+			<div class="work">
+				<img class="work__img" src="img/works/opn_main.png">
+				<div class="work__content">
+					<div class="work__title">Open Packaging Network</div>
+					<div>Децентрализованная экосистема с открытым исходным кодом, платформа для участников
+						упаковочной индустрии с высокими темпами роста и сопутствующими услугами.
+						<br><br>
+						Наша команда разработала:
+						<br><br>
+						● <a class="link" target="_blank" href="https://investor.opnplatform.io/" rel="nofollow">Личый кабинет
+							инвестора</a>
+						<br>
+						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/tree/master/OPK"
+							 rel="nofollow">Токен OPK</a>
+						<br>
+						● <a class="link" target="_blank" href="https://www.opnplatform.io/" rel="nofollow">Сайт ICO</a>
+						<br>
+						● <a class="link" target="_blank" href="https://www.opnplatform.com/" rel="nofollow">dApp MVP</a>
+						<br><br>
+						Смарт контракты успешно прошли аудит Callisto Network, кабинет инвестора продемонстрировал
+						безотказную работу.
+						<br><br>
+						<a class="link" target="_blank" href="https://opnplatform.io/" rel="nofollow">Подробнее о проекте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<h2 class="work-title"><?= WORKS ?></h2>
+			<div class="work">
+				<img class="work__img" src="img/works/mitoshi_main.png" style="	margin-right: 40px;">
+				<div class="work__content">
+					<div class="work__title">Mitoshi - честная лотерея на блокчейне Ethereum</div>
+					<div>Честная и прозрачная онлайн-лотерея с открытым исходным кодом, построенная на смарт контрактах
+						блокчейна Ethereum.
+						<br><br>
+						Наша команда разработала:
+						<br><br>
+						● <a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow">Сайт ICO</a>
+						<br>
+						● <a class="link" target="_blank" href="https://investor.mitoshi.io/" rel="nofollow">Личый кабинет
+							инвестора</a>
+						<br>
+						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/MTSH.sol"
+							 rel="nofollow">ERC20 Токен MTSH</a>
+						<br><br>
+						Смарт контракты успешно прошли аудит Harvard Innovation Launch Lab, начата разработка
+						децентрализованной крипто-лотереи.
+						<br><br>
+						<a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow">Подробнее о проекте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="contacts" class="section">
 		<div class="container">
 			<div class="contacts">
@@ -294,10 +411,13 @@ $v = 3;
                         <?= CONTACTS_TEXT2 ?>
 						<div class="contacts__soc">
 							Telegram — <a class="link" target="_blank" rel="nofollow" href="https://t.me/loftchain">@loftchain</a>
-							<br>WhatsUp — <a class="link" target="_blank" rel="nofollow" href="https://api.whatsapp.com/send?phone=79811257276">79811257276</a>
+							<br>WhatsUp — <a class="link" target="_blank" rel="nofollow"
+											 href="https://api.whatsapp.com/send?phone=79811257276">79811257276</a>
 							<br>WeChat — <span class="link_text">loftchain</span>
-							<br>Skype — <a class="link" target="_blank" rel="nofollow" href="skype:loftchain@hotmail.com">live:loftchain</a>
-							<br>E-Mail — <a class="link" target="_blank" rel="nofollow" href="mailto:support@loftchain.io">support@loftchain.io</a>
+							<br>Skype — <a class="link" target="_blank" rel="nofollow"
+										   href="skype:loftchain@hotmail.com">live:loftchain</a>
+							<br>E-Mail — <a class="link" target="_blank" rel="nofollow"
+											href="mailto:support@loftchain.io">support@loftchain.io</a>
 						</div>
 					</div>
 				</div>
@@ -317,10 +437,23 @@ $v = 3;
 
 <nav class="menu-services navigation">
 	<a class="menu-services__item" rel="nofollow" href="#site-ico" data-menuanchor="site-ico"><?= SERVICE1_TITLE ?></a>
-	<a class="menu-services__item" rel="nofollow" href="#back-office" data-menuanchor="back-office"><?= SERVICE2_TITLE ?></a>
-	<a class="menu-services__item" rel="nofollow" href="#smart-contract" data-menuanchor="smart-contract"><?= SERVICE3_TITLE ?></a>
+	<a class="menu-services__item" rel="nofollow" href="#back-office"
+	   data-menuanchor="back-office"><?= SERVICE2_TITLE ?></a>
+	<a class="menu-services__item" rel="nofollow" href="#smart-contract"
+	   data-menuanchor="smart-contract"><?= SERVICE3_TITLE ?></a>
 	<a class="menu-services__item" rel="nofollow" href="#audit-smart-contract"
 	   data-menuanchor="audit-smart-contract"><?= SERVICE4_TITLE ?></a>
+</nav>
+
+<nav class="menu-works navigation">
+	<a class="menu-services__item" rel="nofollow" href="#works" data-menuanchor="site-ico">
+		<img src="img/works/arcona_logo.png" class="menu-works__icon" alt="coin">Arcona</a>
+	<a class="menu-services__item" rel="nofollow" href="#leadrex" data-menuanchor="back-office">
+		<img src="img/works/leadrex_logo.png" class="menu-works__icon" alt="coin">Leadrex</a>
+	<a class="menu-services__item" rel="nofollow" href="#opn" data-menuanchor="audit-smart-contract">
+		<img src="img/works/opn_logo.png" class="menu-works__icon" alt="coin">OPN</a>
+	<a class="menu-services__item" rel="nofollow" href="#mitoshi" data-menuanchor="smart-contract">
+		<img src="img/works/mitoshi_logo.png" class="menu-works__icon" alt="coin">Mitoshi</a>
 </nav>
 
 <div class="icon-scroll"></div>
@@ -351,13 +484,19 @@ $v = 3;
 				loopTop: false,
 				css3: true,
 				keyboardScrolling: true,
-				anchors: ['home', 'site-ico', 'back-office', 'smart-contract', 'audit-smart-contract', 'team', 'contacts'],
-				sectionsColor: ['#000', '#000', '#000', '#000', '#000', '#000', '#000'],
+				anchors: ['home', 'site-ico', 'back-office', 'smart-contract', 'audit-smart-contract', 'team', 'works', 'leadrex', 'opn', 'mitoshi', 'contacts'],
+				sectionsColor: ['#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000'],
 				navigation: false,
 				onLeave: function (index, nextIndex, direction) {
 					if (nextIndex !== 2 && nextIndex !== 3 && nextIndex !== 4 && nextIndex !== 5) {
 						$('.menu-services').removeClass('menu-services_active');
 						$('.menu .menu__item[data-menuanchor="site-ico"]').removeClass('active');
+					}
+					if (nextIndex !== 7 && nextIndex !== 8 && nextIndex !== 9 && nextIndex !== 10 && nextIndex !== 11) {
+						var activeIndex = index - 7;
+						$('.menu-works .menu-services__item:eq(' + activeIndex + ')').removeClass('active');
+						$('.menu-works').removeClass('menu-works_active');
+						$('.menu .menu__item[data-menuanchor="works"]').removeClass('active');
 					}
 				},
 				afterRender: function (index) {
@@ -367,13 +506,20 @@ $v = 3;
 						$('.menu-services').addClass('menu-services_active');
 						$('.menu .menu__item[data-menuanchor="site-ico"]').addClass('active');
 					}
+
+					if (index === 7 || index === 8 || index === 9 || index === 10 || index === 11) {
+						var activeIndex = index - 7;
+						$('.menu-works .menu-services__item:eq(' + activeIndex + ')').addClass('active');
+						$('.menu-works').addClass('menu-works_active');
+						$('.menu .menu__item[data-menuanchor="works"]').addClass('active');
+					}
 				}
 			});
 		} else {
 			$('.mob-nav nav ul li a').click(function () {
 				event.preventDefault();
 				$('#mNav').click();
-				$('html, body').animate({scrollTop:$(this.hash).offset().top - 60}, 700);
+				$('html, body').animate({scrollTop: $(this.hash).offset().top - 60}, 700);
 			});
 		}
 
@@ -395,9 +541,9 @@ $v = 3;
 		});
 	});
 
-	window.onscroll = function() {
+	window.onscroll = function () {
 		var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-		if(scrolled > 0) {
+		if (scrolled > 0) {
 			document.querySelector('.icon-scroll').style.display = 'none';
 		} else {
 			document.querySelector('.icon-scroll').style.display = 'block';
@@ -413,10 +559,8 @@ $v = 3;
 		}
 
 		localStorage.setItem('lang', newLang);
-		location.href = '//loftchain.io?lang='+newLang;
+		location.href = '//loftchain.io?lang=' + newLang;
 	}
-
-
 </script>
 
 </body>

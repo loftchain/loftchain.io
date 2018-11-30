@@ -3,6 +3,7 @@ define('TITLE', 'LoftChain - ICO technical solutions');
 define('HOME', 'Home');
 define('SERVICES', 'Services');
 define('TEAM', 'Team');
+define('WORKS', 'Our works');
 define('CONTACTS', 'Contacts');
 define('DESCRIPTION', 'Blockchain development');
 
