@@ -116,15 +116,24 @@ a {
 }
 
 .main-info {
-	position: absolute;
-	top: calc(50% - 136px);
-	z-index: 2;
-	width: 100%;
-	text-align: center
+	text-align: center;
+	min-height: 500px;
+}
+
+.main {
+	display: flex;
+	align-items: center;
 }
 
 .logo {
-	height: 25vh
+	max-width: 500px;
+	margin: 140px 0 30px;
+}
+
+.main-img {
+	position: absolute;
+	max-width: 500px;
+	z-index: -1;
 }
 
 .description {
@@ -404,26 +413,32 @@ a {
 	filter: brightness(0.5);
 	cursor: pointer;
 }
+
 .nav-works__icon:hover {
 	filter: brightness(1);
 }
+
 .menu-works__icon {
 	height: 30px;
 	margin-right: 10px;
 }
+
 .work {
 	display: flex;
 	align-items: center;
 	padding-bottom: 50px;
 }
+
 .work-title {
 	text-align: center;
 }
+
 .work__img {
 	width: 100%;
 	max-width: 500px;
 	margin-right: 10px;
 }
+
 .work__title {
 	margin-bottom: 25px;
 	font-size: 20px;

@@ -148,36 +148,37 @@ $v = 4;
 
 <div id="pagepiling">
 	<div id="home" class="section">
-		<div class="content">
-						<div class="main-info">
-							<img class="main-info__mob-img" src="img/mob-main-img.png" alt="main-img">
-							<img class="logo" src="img/logo-big.png" alt="logo"><br/>
-							<div class="description"><h1><?= DESCRIPTION ?></h1></div>
-						</div>
-						<canvas class="sphere scene scene--full" id="scene"></canvas>
-						<script type="x-shader/x-vertex" id="wrapVertexShader">
-							attribute float size;
-							attribute vec3 color;
-							varying vec3 vColor;
-							void main() {
-								vColor = color;
-								vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-								gl_PointSize = size * ( 350.0 / - mvPosition.z );
-								gl_Position = projectionMatrix * mvPosition;
-							}
-
-						</script>
-						<script type="x-shader/x-fragment" id="wrapFragmentShader">
-							varying vec3 vColor;
-							uniform sampler2D texture;
-							void main(){
-								vec4 textureColor = texture2D( texture, gl_PointCoord );
-								if ( textureColor.a < 0.3 ) discard;
-								vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-								gl_FragColor = color;
-							}
-
-						</script>
+		<div class="content main">
+			<div class="main-info">
+				<img class="main-info__mob-img" src="img/mob-main-img.png" alt="main-img">
+				<img class="main-img" src="img/main_img.png" alt="main-img">
+				<img class="logo" src="img/logo-big.png" alt="logo"><br/>
+				<div class="description"><h1><?= DESCRIPTION ?></h1></div>
+			</div>
+<!--			<canvas class="sphere scene scene--full" id="scene"></canvas>-->
+<!--			<script type="x-shader/x-vertex" id="wrapVertexShader">-->
+<!--				attribute float size;-->
+<!--				attribute vec3 color;-->
+<!--				varying vec3 vColor;-->
+<!--				void main() {-->
+<!--					vColor = color;-->
+<!--					vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );-->
+<!--					gl_PointSize = size * ( 350.0 / - mvPosition.z );-->
+<!--					gl_Position = projectionMatrix * mvPosition;-->
+<!--				}-->
+<!---->
+<!--			</script>-->
+<!--			<script type="x-shader/x-fragment" id="wrapFragmentShader">-->
+<!--				varying vec3 vColor;-->
+<!--				uniform sampler2D texture;-->
+<!--				void main(){-->
+<!--					vec4 textureColor = texture2D( texture, gl_PointCoord );-->
+<!--					if ( textureColor.a < 0.3 ) discard;-->
+<!--					vec4 color = vec4(vColor.xyz, 1.0) * textureColor;-->
+<!--					gl_FragColor = color;-->
+<!--				}-->
+<!---->
+<!--			</script>-->
 		</div>
 	</div>
 	<div id="site-ico" class="section">
@@ -463,9 +464,9 @@ $v = 4;
 	var isMobile = window.innerWidth <= 767;
 
 	if (!isMobile) {
-		document.write('<scr' + 'ipt defer src="js/three.min.js"></scr' + 'ipt>');
-		document.write('<scr' + 'ipt defer src="js/TweenMax.min.js"></scr' + 'ipt>');
-		document.write('<scr' + 'ipt defer src="js/sphere.js?v=<?= $v ?>"></scr' + 'ipt>');
+//		document.write('<scr' + 'ipt defer src="js/three.min.js"></scr' + 'ipt>');
+//		document.write('<scr' + 'ipt defer src="js/TweenMax.min.js"></scr' + 'ipt>');
+//		document.write('<scr' + 'ipt defer src="js/sphere.js?v=<?//= $v ?>//"></scr' + 'ipt>');
 		document.write('<scr' + 'ipt defer src="js/jquery.pagepiling.min.js"></scr' + 'ipt>');
 	}
 
@@ -492,7 +493,7 @@ $v = 4;
 						$('.menu-services').removeClass('menu-services_active');
 						$('.menu .menu__item[data-menuanchor="site-ico"]').removeClass('active');
 					}
-					if (nextIndex !== 7 && nextIndex !== 8 && nextIndex !== 9 && nextIndex !== 10 && nextIndex !== 11) {
+					if (nextIndex !== 7 && nextIndex !== 8 && nextIndex !== 9 && nextIndex !== 10) {
 						var activeIndex = index - 7;
 						$('.menu-works .menu-services__item:eq(' + activeIndex + ')').removeClass('active');
 						$('.menu-works').removeClass('menu-works_active');
@@ -507,7 +508,7 @@ $v = 4;
 						$('.menu .menu__item[data-menuanchor="site-ico"]').addClass('active');
 					}
 
-					if (index === 7 || index === 8 || index === 9 || index === 10 || index === 11) {
+					if (index === 7 || index === 8 || index === 9 || index === 10) {
 						var activeIndex = index - 7;
 						$('.menu-works .menu-services__item:eq(' + activeIndex + ')').addClass('active');
 						$('.menu-works').addClass('menu-works_active');
