@@ -294,23 +294,19 @@ $v = 4;
 			<div class="work">
 				<img class="work__img" src="img/works/arcona_main_500.png">
 				<div class="work__content">
-					<div class="work__title">Arcona - маркетплэйс виртуальной земли.</div>
-					<div>Блокчейн экосистема Arcona объединяет реальный и
-						виртуальный миры, создавая глобальный слой дополненной реальности – Цифровую землю.
-						<br><br>
-						Наша команда взяла на себя <b>блокчейн разработку</b> этого проекта.
-						<br><br>
-						Наша команда разработала:
-						<br><br>
+					<div class="work__title"><?= WORK1_TITLE ?></div>
+					<div>
+                        <?= WORK1_DESC ?>
+                        <?= WORK_HARD ?>
 						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/Auction.sol"
-							 rel="nofollow">Контракт аукциона</a>
+							 rel="nofollow"><?= WORK1_TITLE1 ?></a>
 						<br>
 						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/LTT.sol"
-							 rel="nofollow">Контракт земли</a>
+							 rel="nofollow"><?= WORK1_TITLE2 ?></a>
 						<br><br>
-						С момента запуска контракты показывают безукоризненную работу.
+                        <?= WORK1_RESULT ?>
 						<br><br>
-						<a class="link" target="_blank" href="https://www.arcona.io/index.html" rel="nofollow">Подробнее о проекте</a>
+						<a class="link" target="_blank" href="https://www.arcona.io/index.html" rel="nofollow"><?= WORK_MORE ?></a>
 					</div>
 				</div>
 			</div>
@@ -322,20 +318,18 @@ $v = 4;
 			<div class="work">
 				<img class="work__img" src="img/works/leadrex_main.png">
 				<div class="work__content">
-					<div class="work__title">LeadRex - децентрализованная платформа лидогенерации</div>
-					<div>Платформа лидогенерации на базе искусственного интеллекта и блокчейн разрабатывается для
-						увеличения конверсии рекламных кампаний и снижения операционных затрат.
-						<br><br>
-						Наша команда разработала:
-						<br><br>
-						● <a class="link" target="_blank" href="https://investor.leadrex.io/" rel="nofollow">Личый кабинет инвестора</a>
+					<div class="work__title"><?= WORK2_TITLE ?></div>
+					<div>
+						<?= WORK2_DESC ?>
+                        <?= WORK_HARD ?>
+						● <a class="link" target="_blank" href="https://investor.leadrex.io/" rel="nofollow"><?= WORK2_TITLE1 ?></a>
 						<br>
 						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/LDX.sol"
-							 rel="nofollow">ERC20 Токен LDX</a>
+							 rel="nofollow"><?= WORK2_TITLE2 ?></a>
 						<br><br>
-						ICO успешно завершено и собрало более 3 миллионов долларов.
+                        <?= WORK2_RESULT ?>
 						<br><br>
-						<a class="link" target="_blank" href="https://leadrex.io/" rel="nofollow">Подробнее о проекте</a>
+						<a class="link" target="_blank" href="https://leadrex.io/" rel="nofollow"><?= WORK_MORE ?></a>
 					</div>
 				</div>
 			</div>
@@ -347,26 +341,22 @@ $v = 4;
 			<div class="work">
 				<img class="work__img" src="img/works/opn_main.png">
 				<div class="work__content">
-					<div class="work__title">Open Packaging Network</div>
-					<div>Децентрализованная экосистема с открытым исходным кодом, платформа для участников
-						упаковочной индустрии с высокими темпами роста и сопутствующими услугами.
-						<br><br>
-						Наша команда разработала:
-						<br><br>
-						● <a class="link" target="_blank" href="https://investor.opnplatform.io/" rel="nofollow">Личый кабинет
-							инвестора</a>
+					<div class="work__title"><?= WORK3_TITLE ?></div>
+					<div>
+						<?= WORK3_DESC ?>
+                        <?= WORK_HARD ?>
+						● <a class="link" target="_blank" href="https://investor.opnplatform.io/" rel="nofollow"><?= WORK3_TITLE1 ?></a>
 						<br>
 						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/tree/master/OPK"
-							 rel="nofollow">Токен OPK</a>
+							 rel="nofollow"><?= WORK3_TITLE2 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://www.opnplatform.io/" rel="nofollow">Сайт ICO</a>
+						● <a class="link" target="_blank" href="https://www.opnplatform.io/" rel="nofollow"><?= WORK3_TITLE3 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://www.opnplatform.com/" rel="nofollow">dApp MVP</a>
+						● <a class="link" target="_blank" href="https://www.opnplatform.com/" rel="nofollow"><?= WORK3_TITLE4 ?></a>
 						<br><br>
-						Смарт контракты успешно прошли аудит Callisto Network, кабинет инвестора продемонстрировал
-						безотказную работу.
+                        <?= WORK3_RESULT ?>
 						<br><br>
-						<a class="link" target="_blank" href="https://opnplatform.io/" rel="nofollow">Подробнее о проекте</a>
+						<a class="link" target="_blank" href="https://opnplatform.io/" rel="nofollow"><?= WORK_MORE ?></a>
 					</div>
 				</div>
 			</div>
@@ -378,24 +368,20 @@ $v = 4;
 			<div class="work">
 				<img class="work__img" src="img/works/mitoshi_main.png" style="	margin-right: 40px;">
 				<div class="work__content">
-					<div class="work__title">Mitoshi - честная лотерея на блокчейне Ethereum</div>
-					<div>Честная и прозрачная онлайн-лотерея с открытым исходным кодом, построенная на смарт контрактах
-						блокчейна Ethereum.
-						<br><br>
-						Наша команда разработала:
-						<br><br>
-						● <a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow">Сайт ICO</a>
+					<div class="work__title"><?= WORK4_TITLE ?></div>
+					<div>
+						<?= WORK4_DESC ?>
+                        <?= WORK_HARD ?>
+						● <a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow"><?= WORK4_TITLE1 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://investor.mitoshi.io/" rel="nofollow">Личый кабинет
-							инвестора</a>
+						● <a class="link" target="_blank" href="https://investor.mitoshi.io/" rel="nofollow"><?= WORK4_TITLE2 ?></a>
 						<br>
 						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/MTSH.sol"
-							 rel="nofollow">ERC20 Токен MTSH</a>
+							 rel="nofollow"><?= WORK4_TITLE3 ?></a>
 						<br><br>
-						Смарт контракты успешно прошли аудит Harvard Innovation Launch Lab, начата разработка
-						децентрализованной крипто-лотереи.
+                        <?= WORK4_RESULT ?>
 						<br><br>
-						<a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow">Подробнее о проекте</a>
+						<a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow"><?= WORK_MORE ?></a>
 					</div>
 				</div>
 			</div>

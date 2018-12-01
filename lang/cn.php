@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 define('TITLE', 'LoftChain - ICO 技术解决方案');
 define('HOME', '首页');
@@ -56,3 +55,29 @@ define('INPUT2', '姓名');
 define('INPUT3', '发送');
 
 define('SEND_SUCCESS', '谢谢！您的信息已经发送的，我们经理很快跟您联系');
+
+define('WORK_HARD', '我們的團隊開發：<br> <br>');
+define('WORK_MORE', '關於項目的更多信息');
+define('WORK1_TITLE', 'Arcona  -  市場數字土地。');
+define('WORK1_DESC', '區塊鏈動力生態系統將全球真實和虛擬世界融合在一起, 創造增強現實層。<br> <br>');
+define('WORK1_TITLE1', '合同拍賣');
+define('WORK1_TITLE2', '合同土地');
+define('WORK1_RESULT', '從發布之時起, 合同就表現出無可挑剔的表現。');
+define('WORK2_TITLE', 'LeadRex  - 分散式潛在客戶生成平台');
+define('WORK2_DESC', '基於人工智能和區塊鏈的潛在客戶生成平台, 旨在增加廣告活動的轉換並降低運營成本。<br> <br>');
+define('WORK2_TITLE1', '私人辦公室');
+define('WORK2_TITLE2', 'ERC20令牌LDX');
+define('WORK2_RESULT', 'ICO成功完成並籌集了300多萬美元。');
+define('WORK3_TITLE', 'Open Packaging Network');
+define('WORK3_DESC', '開源平台, 高增長包裝行業參與者和相關服務的分散生態系統。<br> <br>');
+define('WORK3_TITLE1', '私人辦公室');
+define('WORK3_TITLE2', '令牌OPK');
+define('WORK3_TITLE3', 'ICO網站');
+define('WORK3_TITLE4', 'dApp MVP');
+define('WORK3_RESULT', '智能合約已成功通過Callisto網絡的審核, 私人辦公室已證明有麻煩的工作。');
+define('WORK4_TITLE', 'Mitoshi  - 以太坊區塊鏈上的公平彩票');
+define('WORK4_DESC', '一個誠實和透明的開源在線彩票, 建立在區塊鏈以太坊的智能合約上。<br> <br>');
+define('WORK4_TITLE1', 'ICO網站');
+define('WORK4_TITLE2', '私人辦公室');
+define('WORK4_TITLE3', 'ERC20令牌MTSH');
+define('WORK4_RESULT', '智能合約成功通過哈佛創新啟動實驗室審核, 開始分散加密彩票開發');
