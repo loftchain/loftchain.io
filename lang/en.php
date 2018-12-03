@@ -19,6 +19,7 @@ define('SERVICE1_BENEFITS', '<li>Design development</li>
     <li>Marketing copywriting</li>');
 define('SERVICE2_TITLE', 'Private office');
 define('SERVICE2_PRICE', 'from $3500');
+define('SERVICE2_MORE', 'Demo private office');
 define('SERVICE2_DESC', 'Investor`s private office is a safe and convenient fund-raising tool for your ICO project.
     <br/><br/>Functionality of the private office will allow your investors to receive information about conducted transactions and transfer of tokens at the time of the completion of ICO. 
     <br/><br/>Investors will be able to quickly calculate the cost of the token, participate in the referral program, be the first to learn about bonuses and promotions, be aware of stages of ICO.');
@@ -26,8 +27,9 @@ define('SERVICE2_BENEFITS', '<li>Complete crowdsale statistics</li>
     <li>Token payments via BTC, ETH, LTC, etc.</li>
     <li>Integration with external resources</li>');
 
-define('SERVICE3_TITLE', 'Blockchain segment');
+define('SERVICE3_TITLE', 'Smart contract development');
 define('SERVICE3_PRICE', 'from $3500');
+define('SERVICE3_MORE', 'Developed contracts');
 define('SERVICE3_DESC', 'After the advent of Ethereum technology, the blockchain environment is capable of executing program code. One of the main applications of this technology is crowdfunding. Initial coin offering (ICO) - involves the use of <b>smart-contracts</b> that allow receiving investments in cryptocurrency in a reliable and safe way, bring to zero the threat of hacker and transaction substitution attacks.');
 define('SERVICE3_BENEFITS', '<li>Development of a smart contract of any complexity</li>
     <li>Smart contract audit</li>

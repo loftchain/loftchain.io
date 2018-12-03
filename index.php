@@ -155,30 +155,30 @@ $v = 4;
 				<img class="logo" src="img/logo-big.png" alt="logo"><br/>
 				<div class="description"><h1><?= DESCRIPTION ?></h1></div>
 			</div>
-<!--			<canvas class="sphere scene scene--full" id="scene"></canvas>-->
-<!--			<script type="x-shader/x-vertex" id="wrapVertexShader">-->
-<!--				attribute float size;-->
-<!--				attribute vec3 color;-->
-<!--				varying vec3 vColor;-->
-<!--				void main() {-->
-<!--					vColor = color;-->
-<!--					vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );-->
-<!--					gl_PointSize = size * ( 350.0 / - mvPosition.z );-->
-<!--					gl_Position = projectionMatrix * mvPosition;-->
-<!--				}-->
-<!---->
-<!--			</script>-->
-<!--			<script type="x-shader/x-fragment" id="wrapFragmentShader">-->
-<!--				varying vec3 vColor;-->
-<!--				uniform sampler2D texture;-->
-<!--				void main(){-->
-<!--					vec4 textureColor = texture2D( texture, gl_PointCoord );-->
-<!--					if ( textureColor.a < 0.3 ) discard;-->
-<!--					vec4 color = vec4(vColor.xyz, 1.0) * textureColor;-->
-<!--					gl_FragColor = color;-->
-<!--				}-->
-<!---->
-<!--			</script>-->
+			<!--			<canvas class="sphere scene scene--full" id="scene"></canvas>-->
+			<!--			<script type="x-shader/x-vertex" id="wrapVertexShader">-->
+			<!--				attribute float size;-->
+			<!--				attribute vec3 color;-->
+			<!--				varying vec3 vColor;-->
+			<!--				void main() {-->
+			<!--					vColor = color;-->
+			<!--					vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );-->
+			<!--					gl_PointSize = size * ( 350.0 / - mvPosition.z );-->
+			<!--					gl_Position = projectionMatrix * mvPosition;-->
+			<!--				}-->
+			<!---->
+			<!--			</script>-->
+			<!--			<script type="x-shader/x-fragment" id="wrapFragmentShader">-->
+			<!--				varying vec3 vColor;-->
+			<!--				uniform sampler2D texture;-->
+			<!--				void main(){-->
+			<!--					vec4 textureColor = texture2D( texture, gl_PointCoord );-->
+			<!--					if ( textureColor.a < 0.3 ) discard;-->
+			<!--					vec4 color = vec4(vColor.xyz, 1.0) * textureColor;-->
+			<!--					gl_FragColor = color;-->
+			<!--				}-->
+			<!---->
+			<!--			</script>-->
 		</div>
 	</div>
 	<div id="site-ico" class="section">
@@ -187,7 +187,6 @@ $v = 4;
 				<img class="service__img" src="img/services/icon-1.png">
 				<div class="service__info">
 					<h2><?= SERVICE1_TITLE ?></h2>
-					<div class="service__price"><?= SERVICE1_PRICE ?></div>
 					<div class="service__description"><?= SERVICE1_DESC ?></div>
 					<ul class="service__benefits"><?= SERVICE1_BENEFITS ?></ul>
 				</div>
@@ -200,9 +199,11 @@ $v = 4;
 				<img class="service__img" src="img/services/icon-2.png">
 				<div class="service__info">
 					<h2><?= SERVICE2_TITLE ?></h2>
-					<div class="service__price"><?= SERVICE2_PRICE ?></div>
 					<div class="service__description"><?= SERVICE2_DESC ?></div>
 					<ul class="service__benefits"><?= SERVICE2_BENEFITS ?></ul>
+					<div class="service__more">
+						<a class="link" href="https://office.loftchain.io/" target="_blank"><?= SERVICE2_MORE ?></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -213,9 +214,11 @@ $v = 4;
 				<img class="service__img" src="img/services/icon-3.png">
 				<div class="service__info">
 					<h2><?= SERVICE3_TITLE ?></h2>
-					<div class="service__price"><?= SERVICE3_PRICE ?></div>
 					<div class="service__description"><?= SERVICE3_DESC ?></div>
 					<ul class="service__benefits"><?= SERVICE3_BENEFITS ?></ul>
+					<div class="service__more">
+						<a class="link" href="https://github.com/loftchain/smart-contracts" target="_blank" rel="nofollow"><?= SERVICE3_MORE ?></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -226,7 +229,6 @@ $v = 4;
 				<img class="service__img" src="img/services/icon-4.png">
 				<div class="service__info">
 					<h2><?= SERVICE4_TITLE ?></h2>
-					<div class="service__price"><?= SERVICE4_PRICE ?></div>
 					<div class="service__description"><?= SERVICE4_DESC ?></div>
 					<ul class="service__benefits"><?= SERVICE4_BENEFITS ?></ul>
 				</div>
@@ -275,13 +277,13 @@ $v = 4;
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/4.jpg?v=2" alt="Artem Began">
-					<div class="team__name">Artem Began</div>
+					<div class="team__name">Alexander Podrezov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/8.jpg?v=2" alt="Sergey Bekish">
-					<div class="team__name">Sergey Bekish</div>
+					<div class="team__name">Sergey Provalinski</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior front-end developer</div>
 				</div>
@@ -298,15 +300,18 @@ $v = 4;
 					<div>
                         <?= WORK1_DESC ?>
                         <?= WORK_HARD ?>
-						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/Auction.sol"
+						● <a class="link" target="_blank"
+							 href="https://github.com/loftchain/smart-contracts/blob/master/Auction.sol"
 							 rel="nofollow"><?= WORK1_TITLE1 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/LTT.sol"
+						● <a class="link" target="_blank"
+							 href="https://github.com/loftchain/smart-contracts/blob/master/LTT.sol"
 							 rel="nofollow"><?= WORK1_TITLE2 ?></a>
 						<br><br>
                         <?= WORK1_RESULT ?>
 						<br><br>
-						<a class="link" target="_blank" href="https://www.arcona.io/index.html" rel="nofollow"><?= WORK_MORE ?></a>
+						<a class="link" target="_blank" href="https://www.arcona.io/index.html"
+						   rel="nofollow"><?= WORK_MORE ?></a>
 					</div>
 				</div>
 			</div>
@@ -320,11 +325,13 @@ $v = 4;
 				<div class="work__content">
 					<div class="work__title"><?= WORK2_TITLE ?></div>
 					<div>
-						<?= WORK2_DESC ?>
+                        <?= WORK2_DESC ?>
                         <?= WORK_HARD ?>
-						● <a class="link" target="_blank" href="https://investor.leadrex.io/" rel="nofollow"><?= WORK2_TITLE1 ?></a>
+						● <a class="link" target="_blank" href="https://investor.leadrex.io/"
+							 rel="nofollow"><?= WORK2_TITLE1 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/LDX.sol"
+						● <a class="link" target="_blank"
+							 href="https://github.com/loftchain/smart-contracts/blob/master/LDX.sol"
 							 rel="nofollow"><?= WORK2_TITLE2 ?></a>
 						<br><br>
                         <?= WORK2_RESULT ?>
@@ -343,20 +350,25 @@ $v = 4;
 				<div class="work__content">
 					<div class="work__title"><?= WORK3_TITLE ?></div>
 					<div>
-						<?= WORK3_DESC ?>
+                        <?= WORK3_DESC ?>
                         <?= WORK_HARD ?>
-						● <a class="link" target="_blank" href="https://investor.opnplatform.io/" rel="nofollow"><?= WORK3_TITLE1 ?></a>
+						● <a class="link" target="_blank" href="https://investor.opnplatform.io/"
+							 rel="nofollow"><?= WORK3_TITLE1 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/tree/master/OPK"
+						● <a class="link" target="_blank"
+							 href="https://github.com/loftchain/smart-contracts/tree/master/OPK"
 							 rel="nofollow"><?= WORK3_TITLE2 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://www.opnplatform.io/" rel="nofollow"><?= WORK3_TITLE3 ?></a>
+						● <a class="link" target="_blank" href="https://www.opnplatform.io/"
+							 rel="nofollow"><?= WORK3_TITLE3 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://www.opnplatform.com/" rel="nofollow"><?= WORK3_TITLE4 ?></a>
+						● <a class="link" target="_blank" href="https://www.opnplatform.com/"
+							 rel="nofollow"><?= WORK3_TITLE4 ?></a>
 						<br><br>
                         <?= WORK3_RESULT ?>
 						<br><br>
-						<a class="link" target="_blank" href="https://opnplatform.io/" rel="nofollow"><?= WORK_MORE ?></a>
+						<a class="link" target="_blank" href="https://opnplatform.io/"
+						   rel="nofollow"><?= WORK_MORE ?></a>
 					</div>
 				</div>
 			</div>
@@ -370,13 +382,16 @@ $v = 4;
 				<div class="work__content">
 					<div class="work__title"><?= WORK4_TITLE ?></div>
 					<div>
-						<?= WORK4_DESC ?>
+                        <?= WORK4_DESC ?>
                         <?= WORK_HARD ?>
-						● <a class="link" target="_blank" href="https://mitoshi.io/" rel="nofollow"><?= WORK4_TITLE1 ?></a>
+						● <a class="link" target="_blank" href="https://mitoshi.io/"
+							 rel="nofollow"><?= WORK4_TITLE1 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://investor.mitoshi.io/" rel="nofollow"><?= WORK4_TITLE2 ?></a>
+						● <a class="link" target="_blank" href="https://investor.mitoshi.io/"
+							 rel="nofollow"><?= WORK4_TITLE2 ?></a>
 						<br>
-						● <a class="link" target="_blank" href="https://github.com/loftchain/smart-contracts/blob/master/MTSH.sol"
+						● <a class="link" target="_blank"
+							 href="https://github.com/loftchain/smart-contracts/blob/master/MTSH.sol"
 							 rel="nofollow"><?= WORK4_TITLE3 ?></a>
 						<br><br>
                         <?= WORK4_RESULT ?>
@@ -404,7 +419,7 @@ $v = 4;
 							<br>Skype — <a class="link" target="_blank" rel="nofollow"
 										   href="skype:loftchain@hotmail.com">live:loftchain</a>
 							<br>E-Mail — <a class="link" target="_blank" rel="nofollow"
-											href="mailto:support@loftchain.io">support@loftchain.io</a>
+											href="mailto:info@loftchain.io">info@loftchain.io</a>
 						</div>
 					</div>
 				</div>

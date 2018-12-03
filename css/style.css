@@ -267,9 +267,12 @@ a {
 .service__description {
 	font-size: 18px;
 	font-weight: 200;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
-
+.service__more {
+	margin-top: 20px;
+}
 .service__benefits {
 	font-size: 18px;
 	font-weight: 200

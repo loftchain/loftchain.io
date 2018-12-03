@@ -19,6 +19,7 @@ define('SERVICE1_BENEFITS', '<li>外部设计</li>
     <li>营销的文案</li>');
 define('SERVICE2_TITLE', '个人中心设计');
 define('SERVICE2_PRICE', '￥20000起');
+define('SERVICE2_MORE', '個人賬戶演示');
 define('SERVICE2_DESC', '投资者的个人中心是一个为您安全、方便地筹措资金的工具。
     <br/><br/>个人中心的使用能使投资者在完成ICO之后收到汇款通知单与令牌转帐知单。 
     <br/><br/>投资者将能够迅速计算令牌的成本，参加转介的程序，及早了解奖金或活动，清楚知道ICO的阶段。');
@@ -26,8 +27,9 @@ define('SERVICE2_BENEFITS', '<li>众募统计</li>
     <li>支付令牌用 BTC, ETH, LTC 等等</li>
     <li>联合与外部资源</li>');
 
-define('SERVICE3_TITLE', '区块链领域');
+define('SERVICE3_TITLE', '智能合約發展');
 define('SERVICE3_PRICE', '￥20000起');
+define('SERVICE3_MORE', '制定合同');
 define('SERVICE3_DESC', '在以太科技出现后，区块链领域能够执行原代码。众筹是这种代码的主要应用方向。初始硬币提供 （Initial coin offering 或者 ICO) 涉及应用智能合约技术，该技术有助于以可靠和安全的方式接收加密货币投资，这项技术将受到黑客攻击的威胁降低至零，并且排除了有关交易信息被替代的可能。	');
 define('SERVICE3_BENEFITS', '<li>所有种智能合约</li>
 <li>智能合约审计</li>
