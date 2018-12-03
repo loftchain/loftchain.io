@@ -1,7 +1,7 @@
 <?php
 $lang = $_GET['lang'] ? $_GET['lang'] : 'en';
 include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
-$v = 4;
+$v = 5;
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
