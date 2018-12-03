@@ -1,7 +1,7 @@
 <?php
 $lang = $_GET['lang'] ? $_GET['lang'] : 'en';
 include_once($_SERVER['DOCUMENT_ROOT'] . "/lang/" . $lang . '.php');
-$v = 6;
+$v = 7;
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -292,7 +292,7 @@ $v = 6;
 	</div>
 	<div id="works" class="section">
 		<div class="container">
-			<h2 class="work-title"><?= WORKS ?></h2>
+			<h2 class="work-title">Arkona</h2>
 			<div class="work">
 				<img class="work__img" src="img/works/arcona_main_500.png">
 				<div class="work__content">
@@ -319,7 +319,7 @@ $v = 6;
 	</div>
 	<div class="section">
 		<div class="container">
-			<h2 class="work-title"><?= WORKS ?></h2>
+			<h2 class="work-title">Leadrex</h2>
 			<div class="work">
 				<img class="work__img" src="img/works/leadrex_main.png">
 				<div class="work__content">
@@ -344,7 +344,7 @@ $v = 6;
 	</div>
 	<div class="section">
 		<div class="container">
-			<h2 class="work-title"><?= WORKS ?></h2>
+			<h2 class="work-title">Open Packaging Network</h2>
 			<div class="work">
 				<img class="work__img" src="img/works/opn_main.png">
 				<div class="work__content">
@@ -376,7 +376,7 @@ $v = 6;
 	</div>
 	<div class="section">
 		<div class="container">
-			<h2 class="work-title"><?= WORKS ?></h2>
+			<h2 class="work-title">Mitoshi</h2>
 			<div class="work">
 				<img class="work__img" src="img/works/mitoshi_main.png" style="	margin-right: 40px;">
 				<div class="work__content">

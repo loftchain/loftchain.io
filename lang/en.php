@@ -61,27 +61,27 @@ define('SEND_SUCCESS', 'Thank you! Your message has been successfully sent, our 
 define('WORK_HARD', 'Our team developed:<br><br>');
 define('WORK_MORE', 'More about the project');
 
-define('WORK1_TITLE', 'Arcona - marketplace digital land.');
+define('WORK1_TITLE', 'Virtual land marketplace.');
 define('WORK1_DESC', 'Blockchain powered ecosystem merging together real and virtual worlds worldwide creating augmented reality layer.<br><br>');
 define('WORK1_TITLE1', 'Contract auction');
 define('WORK1_TITLE2', 'Contract land');
 define('WORK1_RESULT', 'From the moment of launch, contracts demonstrate impeccable performance.');
 
-define('WORK2_TITLE', 'LeadRex - decentralized lead generation platform');
+define('WORK2_TITLE', 'Decentralized lead generation platform');
 define('WORK2_DESC', 'The lead generation platform based on artificial intelligence and Blockchain developed to increase the conversion of advertising campaigns and reduce operating costs.<br><br>');
 define('WORK2_TITLE1', 'Private office');
 define('WORK2_TITLE2', 'ERC20 token LDX');
 define('WORK2_RESULT', 'ICO successfully completed and raised over 3 million USD.');
 
-define('WORK3_TITLE', 'Open Packaging Network');
-define('WORK3_DESC', 'Open Source Platform, decentralized ecosystem for high growth packaging industry participants and related services.<br><br>');
+define('WORK3_TITLE', 'Decentralized ecosystem');
+define('WORK3_DESC', 'The Open Packaging Network, as the name suggests, aims at providing an open ecosystem for various stakeholders to transact with each other seamlessly.<br><br>');
 define('WORK3_TITLE1', 'Private office');
 define('WORK3_TITLE2', 'token OPK');
 define('WORK3_TITLE3', 'ICO site');
 define('WORK3_TITLE4', 'dApp MVP');
 define('WORK3_RESULT', 'Smart contracts have successfully passed the audit of the Callisto Network, and the Private office has demonstrated troubleproof work.');
 
-define('WORK4_TITLE', 'Mitoshi - fair lottery on the Ethereum blockchain');
+define('WORK4_TITLE', 'Fair lottery on the Ethereum blockchain');
 define('WORK4_DESC', 'An honest and transparent open source online lottery, built on the smart contracts of the blockchain Ethereum.<br><br>');
 define('WORK4_TITLE1', 'ICO site');
 define('WORK4_TITLE2', 'Private office');

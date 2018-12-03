@@ -443,6 +443,15 @@ a {
 
 .work__title {
 	margin-bottom: 25px;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
+}
+
+.work__content{
+	font-size: 22px;
+	font-weight: 100;
+}
+
+.work__content a{
+	font-weight: 500;
 }
