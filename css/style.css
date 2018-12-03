@@ -52,7 +52,6 @@ a {
 
 .box_service {
 	max-height: calc(100% - 200px);
-	overflow-x: auto;
 	margin: 10px 0 70px
 }
 
