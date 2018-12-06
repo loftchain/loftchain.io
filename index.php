@@ -243,13 +243,7 @@ $v = 7;
 					<img class="team__img" src="img/team/1.jpg?v=2" alt="Nikita Melnikov">
 					<div class="team__name">Nikita Melnikov</div>
 					<div class="team__separator">●</div>
-					<div class="team__position">CTO & co-founder</div>
-				</div>
-				<div class="team__item">
-					<img class="team__img" src="img/team/2_kost.jpg" alt="Kalinouski Kanstantsin">
-					<div class="team__name">Kalinouski Kanstantsin</div>
-					<div class="team__separator">●</div>
-					<div class="team__position">СTO(blockchain) & co-founder</div>
+					<div class="team__position">CEO & founder</div>
 				</div>
 				<div class="team__item">
 					<img class="team__img" src="img/team/5.jpg?v=2" alt="Andrey Petrunin">
@@ -276,13 +270,19 @@ $v = 7;
 					<div class="team__position">Marketing manager (China)</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/4.jpg?v=2" alt="Artem Began">
+					<img class="team__img" src="img/team/2.jpg?v=2" alt="Anton Koltsov">
+					<div class="team__name">Anton Koltsov</div>
+					<div class="team__separator">●</div>
+					<div class="team__position">Blockchain expert</div>
+				</div>
+				<div class="team__item">
+					<img class="team__img" src="img/team/4.jpg?v=2" alt="Alexander Podrezov">
 					<div class="team__name">Alexander Podrezov</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior back-end developer</div>
 				</div>
 				<div class="team__item">
-					<img class="team__img" src="img/team/8.jpg?v=2" alt="Sergey Bekish">
+					<img class="team__img" src="img/team/8.jpg?v=2" alt="Sergey Provalinski">
 					<div class="team__name">Sergey Provalinski</div>
 					<div class="team__separator">●</div>
 					<div class="team__position">Senior front-end developer</div>
